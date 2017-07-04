@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="697" y="-332"/>
         </scene>
-        <!--View Controller-->
+        <!--Quản Lý Thiết Bị-->
         <scene sceneID="Gcl-J2-tVR">
             <objects>
                 <viewController id="UaM-gA-U55" sceneMemberID="viewController">
@@ -40,7 +40,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9hX-5q-q3t"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Thiêm thiết bị">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,7 +56,7 @@
                             <constraint firstItem="1SI-s3-ptn" firstAttribute="top" secondItem="aK5-cC-2W2" secondAttribute="bottom" constant="10" id="tYu-Uk-Qkx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uEC-41-uRf"/>
+                    <navigationItem key="navigationItem" title="Quản Lý Thiết Bị" id="uEC-41-uRf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGI-A8-Pt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

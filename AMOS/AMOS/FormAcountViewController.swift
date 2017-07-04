@@ -34,7 +34,7 @@ class FormAcountViewController: UIViewController, UITextFieldDelegate {
             self.dropDown.setTitle(self.arrayName[index], for: .normal)
             self.deviceIndex = index
             if self.deviceIndex == 3 {
-                self.matKhau.text = "8888"
+                self.matKhau.text = "888888"
             }
             else {
                 self.matKhau.text = "1234"
@@ -44,7 +44,7 @@ class FormAcountViewController: UIViewController, UITextFieldDelegate {
         
         matKhau.delegate = self
         if self.deviceIndex == 3 {
-            matKhau.text = "8888"
+            matKhau.text = "888888"
         }
         else {
             matKhau.text = "1234"
@@ -72,7 +72,15 @@ class FormAcountViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
         let newLength = text.characters.count + string.characters.count - range.length
-        return newLength <= 4
+        var length = 0
+        if self.deviceIndex == 3 {
+           length = 6
+        }
+        else {
+            length = 4
+        }
+
+        return newLength <= length
     }
     
     
@@ -81,6 +89,8 @@ class FormAcountViewController: UIViewController, UITextFieldDelegate {
         if(tenThietBi.text != "" && soSimTrungTam.text != ""){
             
             // Save to Realm
+            
+            RealmManager.saveDevice(name: tenThietBi.text!, type: deviceIndex, device: "", SIM: soSimTrungTam.text!, password: matKhau.text!)
             
             self.navigationController?.popViewController(animated: true)
             

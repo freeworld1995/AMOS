@@ -30,8 +30,8 @@ class PageViewController: UIPageViewController {
 
 }
 
-extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        <#code#>
-    }
-}
+//extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+//        <#code#>
+//    }
+//}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
 		BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DC01F0BF16B00CED788 /* ViewController.swift */; };
 		BFA20DC41F0BF16B00CED788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA20DC21F0BF16B00CED788 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA20DC01F0BF16B00CED788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		BFA20DC51F0BF16B00CED788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA20DC81F0BF16B00CED788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA20DCA1F0BF16B00CED788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8A74696E926726440B5D328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFA20DB21F0BF16B00CED788 = {
 			isa = PBXGroup;
 			children = (
 				BFA20DBD1F0BF16B00CED788 /* AMOS */,
 				BFA20DBC1F0BF16B00CED788 /* Products */,
+				D5103C6F5BA9AF1BB1DED1B9 /* Pods */,
+				A8A74696E926726440B5D328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = AMOS;
 			sourceTree = "<group>";
 		};
+		D5103C6F5BA9AF1BB1DED1B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */,
+				EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFA20DCD1F0BF16B00CED788 /* Build configuration list for PBXNativeTarget "AMOS" */;
 			buildPhases = (
+				C9AA278206B42D97F555138D /* [CP] Check Pods Manifest.lock */,
 				BFA20DB71F0BF16B00CED788 /* Sources */,
 				BFA20DB81F0BF16B00CED788 /* Frameworks */,
 				BFA20DB91F0BF16B00CED788 /* Resources */,
+				C27B7303AEE9F6DA511BA91F /* [CP] Embed Pods Frameworks */,
+				E5E60119263BB7CCBF4CE8AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C27B7303AEE9F6DA511BA91F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMOS/Pods-AMOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AA278206B42D97F555138D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E60119263BB7CCBF4CE8AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMOS/Pods-AMOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFA20DB71F0BF16B00CED788 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		BFA20DCE1F0BF16B00CED788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMOS/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		BFA20DCF1F0BF16B00CED788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMOS/Info.plist;

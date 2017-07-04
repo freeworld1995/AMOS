@@ -10,14 +10,21 @@ import Foundation
 import RealmSwift
 
 class Device: Object {
+    dynamic var id = ""
     dynamic var name = ""
+    dynamic var type = 0
     dynamic var device = ""
     dynamic var SIM = ""
     dynamic var password = ""
     
-    convenience init(name: String, device: String, SIM: String, password: String) {
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    convenience init(name: String, type: Int, device: String, SIM: String, password: String) {
         self.init()
         self.name = name
+        self.type = type
         self.device = device
         self.SIM = SIM
         self.password = password

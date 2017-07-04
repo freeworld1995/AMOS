@@ -10,6 +10,7 @@
 		1B7857CB1F0BF92E0050670D /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7857CA1F0BF92E0050670D /* Main1.storyboard */; };
 		1B7857CD1F0BF9630050670D /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7857CC1F0BF9630050670D /* Main2.storyboard */; };
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
+		BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
 		BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DC01F0BF16B00CED788 /* ViewController.swift */; };
 		BFA20DC41F0BF16B00CED788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA20DC21F0BF16B00CED788 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		BFA20DC91F0BF16B00CED788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA20DC71F0BF16B00CED788 /* LaunchScreen.storyboard */; };
 		BFA20DD71F0C01B400CED788 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DD51F0C01B400CED788 /* Device.swift */; };
 		BFA20DD81F0C01B400CED788 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DD61F0C01B400CED788 /* RealmManager.swift */; };
+		BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DDA1F0C09E600CED788 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		1B7857CC1F0BF9630050670D /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA20DC01F0BF16B00CED788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		BFA20DCA1F0BF16B00CED788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA20DD51F0C01B400CED788 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BFA20DD61F0C01B400CED788 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		BFA20DDA1F0C09E600CED788 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,14 @@
 				5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF08CE151F0C107500D68F10 /* Control Center */ = {
+			isa = PBXGroup;
+			children = (
+				BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */,
+			);
+			name = "Control Center";
 			sourceTree = "<group>";
 		};
 		BFA20DB21F0BF16B00CED788 = {
@@ -87,6 +99,8 @@
 				BFA20DCA1F0BF16B00CED788 /* Info.plist */,
 				1B7857CC1F0BF9630050670D /* Main2.storyboard */,
 				1B7857CA1F0BF92E0050670D /* Main1.storyboard */,
+				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
+				BF08CE151F0C107500D68F10 /* Control Center */,
 			);
 			path = AMOS;
 			sourceTree = "<group>";
@@ -234,9 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
+				BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */,
 				BFA20DD81F0C01B400CED788 /* RealmManager.swift in Sources */,
 				BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */,
 				BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */,
+				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ga-Se-uFa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ga-Se-uFa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +27,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXx-Vc-19Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17" y="189"/>
+        </scene>
+        <!--Control Center View Controller-->
+        <scene sceneID="2ab-b3-XxE">
+            <objects>
+                <viewController id="Fy7-Ic-fQP" customClass="ControlCenterViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n92-7y-rpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="PR7-Cm-ons"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZlC-vV-v0z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFX-ev-Taq">
+                                <rect key="frame" x="16" y="130" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="BẬT HỆ THỐNG">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="turnSystemOn:" destination="Fy7-Ic-fQP" eventType="touchUpInside" id="PL0-bm-cAL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G95-P8-ibh">
+                                <rect key="frame" x="195.5" y="130" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="TẮT HỆ THỐNG">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEn-4b-eI9">
+                                <rect key="frame" x="16" y="279" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="REPLAY ON">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OU1-99-1CO">
+                                <rect key="frame" x="195.5" y="279" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="REPLAY OFF">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Th-px-m2S">
+                                <rect key="frame" x="16" y="428" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="CHẾ ĐỘ Ở NHÀ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yN-Mu-DcW">
+                                <rect key="frame" x="195.5" y="428" width="163.5" height="109"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="XEM CAMERA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MFX-ev-Taq" firstAttribute="leading" secondItem="ZlC-vV-v0z" secondAttribute="leading" constant="16" id="39X-Gw-eft"/>
+                            <constraint firstItem="G95-P8-ibh" firstAttribute="height" secondItem="OU1-99-1CO" secondAttribute="height" id="65B-3d-85x"/>
+                            <constraint firstItem="G95-P8-ibh" firstAttribute="top" secondItem="ZlC-vV-v0z" secondAttribute="topMargin" constant="130" id="AOU-6R-wDn"/>
+                            <constraint firstItem="G95-P8-ibh" firstAttribute="trailing" secondItem="ZlC-vV-v0z" secondAttribute="trailing" constant="-16" id="ClB-Md-eMV"/>
+                            <constraint firstItem="OU1-99-1CO" firstAttribute="leading" secondItem="sEn-4b-eI9" secondAttribute="trailing" constant="16" id="FHk-h5-CfT"/>
+                            <constraint firstItem="OU1-99-1CO" firstAttribute="top" secondItem="G95-P8-ibh" secondAttribute="bottom" constant="40" id="K2z-Tn-ac9"/>
+                            <constraint firstItem="8yN-Mu-DcW" firstAttribute="leading" secondItem="2Th-px-m2S" secondAttribute="trailing" constant="16" id="MSk-kq-TLL"/>
+                            <constraint firstItem="sEn-4b-eI9" firstAttribute="height" secondItem="MFX-ev-Taq" secondAttribute="height" id="Mdo-CT-VR0"/>
+                            <constraint firstItem="2Th-px-m2S" firstAttribute="top" secondItem="sEn-4b-eI9" secondAttribute="bottom" constant="40" id="Nhe-nN-Pt5"/>
+                            <constraint firstItem="2Th-px-m2S" firstAttribute="leading" secondItem="ZlC-vV-v0z" secondAttribute="leading" constant="16" id="OLX-7f-oC7"/>
+                            <constraint firstItem="sEn-4b-eI9" firstAttribute="width" secondItem="OU1-99-1CO" secondAttribute="width" id="P8q-QY-W3t"/>
+                            <constraint firstItem="8yN-Mu-DcW" firstAttribute="top" secondItem="OU1-99-1CO" secondAttribute="bottom" constant="40" id="PSL-NF-mih"/>
+                            <constraint firstItem="OU1-99-1CO" firstAttribute="height" secondItem="8yN-Mu-DcW" secondAttribute="height" id="T1C-ZU-cqY"/>
+                            <constraint firstItem="sEn-4b-eI9" firstAttribute="leading" secondItem="ZlC-vV-v0z" secondAttribute="leading" constant="16" id="a35-uY-SIX"/>
+                            <constraint firstItem="PR7-Cm-ons" firstAttribute="top" secondItem="2Th-px-m2S" secondAttribute="bottom" constant="130" id="dcW-PH-Cnk"/>
+                            <constraint firstItem="2Th-px-m2S" firstAttribute="height" secondItem="sEn-4b-eI9" secondAttribute="height" id="gtQ-ce-RWP"/>
+                            <constraint firstItem="sEn-4b-eI9" firstAttribute="top" secondItem="MFX-ev-Taq" secondAttribute="bottom" constant="40" id="iBG-0o-30c"/>
+                            <constraint firstAttribute="trailing" secondItem="OU1-99-1CO" secondAttribute="trailing" constant="16" id="j7W-je-qK2"/>
+                            <constraint firstItem="MFX-ev-Taq" firstAttribute="width" secondItem="G95-P8-ibh" secondAttribute="width" id="j8L-fa-q3v"/>
+                            <constraint firstItem="2Th-px-m2S" firstAttribute="width" secondItem="8yN-Mu-DcW" secondAttribute="width" id="kX8-kz-KWA"/>
+                            <constraint firstItem="MFX-ev-Taq" firstAttribute="top" secondItem="ZlC-vV-v0z" secondAttribute="top" constant="130" id="kZG-ih-QOu"/>
+                            <constraint firstAttribute="trailing" secondItem="8yN-Mu-DcW" secondAttribute="trailing" constant="16" id="obj-uq-DcT"/>
+                            <constraint firstItem="G95-P8-ibh" firstAttribute="leading" secondItem="MFX-ev-Taq" secondAttribute="trailing" constant="16" id="rBY-E1-Cqy"/>
+                            <constraint firstItem="PR7-Cm-ons" firstAttribute="top" secondItem="8yN-Mu-DcW" secondAttribute="bottom" constant="130" id="xO4-iS-EaX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXK-ZJ-jhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="903.59820089955031"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="YEL-Re-xTV">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Djt-qQ-BUf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2f1-BU-1V7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="200"/>
         </scene>
     </scenes>
 </document>

@@ -138,17 +138,25 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 2:
-                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "lockkeyboard") as! LockKeyboardViewController
-                vc.id = id
-                navigationController?.pushViewController(vc, animated: true)
+                if currentDevice.type == 3 {
+                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "lockkeyboard") as! LockKeyboardViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             case 5:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "volumesetting") as! VolumeSettingViewController
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 6:
-                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "availablesetting") as! AvalibleSettingViewController
-                vc.id = id
-                navigationController?.pushViewController(vc, animated: true)
+                if currentDevice.type == 3 {
+                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "availablesetting") as! AvalibleSettingViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             case 7:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
                 vc.type = 10

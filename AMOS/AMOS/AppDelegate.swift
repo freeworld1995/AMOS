@@ -13,7 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func getCurrentViewController() -> UIViewController {
+        return window!.visibleViewController!
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -41,6 +44,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
+
+extension UIWindow {
+    public var visibleViewController: UIViewController? {
+        return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
+    }
+    
+    public static func getVisibleViewControllerFrom(_ vc: UIViewController?) -> UIViewController? {
+        if let nc = vc as? UINavigationController {
+            return UIWindow.getVisibleViewControllerFrom(nc.visibleViewController)
+        } else if let tc = vc as? UITabBarController {
+            return UIWindow.getVisibleViewControllerFrom(tc.selectedViewController)
+        } else {
+            if let pvc = vc?.presentedViewController {
+                return UIWindow.getVisibleViewControllerFrom(pvc)
+            } else {
+                return vc
+            }
+        }
+    }
+}
+
 

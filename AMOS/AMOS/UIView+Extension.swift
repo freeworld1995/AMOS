@@ -22,4 +22,16 @@ extension UIView {
     static func fromNib() -> UIView {
         return Bundle.main.loadNibNamed(String(describing: self), owner: nil, options: nil)!.first as! UIView
     }
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
 }

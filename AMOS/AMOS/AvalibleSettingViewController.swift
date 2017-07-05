@@ -13,7 +13,7 @@ import MessageUI
 
 import DropDown
 class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewControllerDelegate {
-
+    
     var id: Int!
     var currentDevice : Device!
     
@@ -50,7 +50,7 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
             createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0/1#")
         }
         else {
-           createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0/1#")
+            createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0/1#")
         }
         
     }
@@ -58,13 +58,13 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setUpDropDown()
         currentDevice = RealmManager.getCurrentDevice(id: id)
+        self.setUpDropDown()
         if(currentDevice.type == 3){
             self.viewTrangThai.isHidden = true
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -126,10 +126,8 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
-
-   
+    
+    
 }

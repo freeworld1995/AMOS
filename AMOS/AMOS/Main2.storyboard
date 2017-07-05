@@ -207,6 +207,13 @@
                                             <action selector="donePressed:" destination="rUa-TO-FHO" eventType="touchUpInside" id="wgw-EI-FCo"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pu2-dG-5Mz">
+                                        <rect key="frame" x="8" y="8" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="rUa-TO-FHO" eventType="touchUpInside" id="M0B-dc-5hW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -215,6 +222,8 @@
                                     <constraint firstAttribute="trailing" secondItem="OMD-oP-Ogm" secondAttribute="trailing" id="EQD-v6-03F"/>
                                     <constraint firstItem="UYU-uz-Zs9" firstAttribute="top" secondItem="3YT-oA-wVN" secondAttribute="top" constant="8" id="Ls6-EH-FEo"/>
                                     <constraint firstAttribute="trailing" secondItem="UYU-uz-Zs9" secondAttribute="trailing" constant="12" id="ZPt-aC-Lgs"/>
+                                    <constraint firstItem="Pu2-dG-5Mz" firstAttribute="leading" secondItem="3YT-oA-wVN" secondAttribute="leading" constant="8" id="jZG-nk-QGk"/>
+                                    <constraint firstItem="Pu2-dG-5Mz" firstAttribute="top" secondItem="3YT-oA-wVN" secondAttribute="top" constant="8" id="uvT-EO-qgM"/>
                                     <constraint firstAttribute="bottom" secondItem="OMD-oP-Ogm" secondAttribute="bottom" id="xNj-70-Gp3"/>
                                 </constraints>
                             </view>

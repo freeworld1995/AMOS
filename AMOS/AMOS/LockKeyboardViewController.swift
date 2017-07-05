@@ -56,8 +56,6 @@ class LockKeyboardViewController: UIViewController , MFMessageComposeViewControl
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 

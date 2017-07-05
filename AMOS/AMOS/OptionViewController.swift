@@ -73,6 +73,10 @@ class OptionViewController: UIViewController {
         createMessage(device4: device4String!, otherDevice: otherBody)
         hideDatePicker()
     }
+    
+    @IBAction func cancelPressed(_ sender: UIButton) {
+        hideDatePicker()
+    }
 }
 
 // MARK: Datasoure, delegate
@@ -129,6 +133,30 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             case 0:
                 setupDatePicker()
                 showDatePicker()
+            case 1:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changepass") as! ChangePassWordViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 2:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "lockkeyboard") as! LockKeyboardViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 5:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "volumesetting") as! VolumeSettingViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 6:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "availablesetting") as! AvalibleSettingViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 7:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
+                vc.type = 10
+                navigationController?.pushViewController(vc, animated: true)
+            case 8:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
+                vc.type = 11
+                navigationController?.pushViewController(vc, animated: true)
             default:
                 break
             }

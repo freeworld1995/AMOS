@@ -30,9 +30,13 @@ class PageViewController: UIPageViewController {
         dataSource = self
         delegate = self
         
-        if let firstViewController = VCArr.first {
-            (firstViewController as! ControlCenterViewController).id = id
-            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+        if let controlCenterVC = VCArr.first {
+            (controlCenterVC as! ControlCenterViewController).id = id
+            setViewControllers([controlCenterVC], direction: .forward, animated: true, completion: nil)
+        }
+        
+        if let optionVC = VCArr.last {
+            (optionVC as! OptionViewController).id = id
         }
     }
     

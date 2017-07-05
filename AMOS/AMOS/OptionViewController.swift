@@ -12,6 +12,10 @@ class OptionViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Input properties
+    var id: Int!
+    var currentDevice: Device!
+    
     lazy var data: [String] = {
         return [
             "CÀI ĐẶT THỜI GIAN",
@@ -42,6 +46,8 @@ class OptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentDevice = RealmManager.getCurrentDevice(id: id)
     }
 
 }

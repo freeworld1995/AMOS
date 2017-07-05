@@ -23,7 +23,7 @@ class RealmManager {
     static func deleteDevice(id: Int) {
         let realm = try! Realm()
         
-        if let object = realm.object(ofType: Device.self, forPrimaryKey: "\(id)") {
+        if let object = realm.object(ofType: Device.self, forPrimaryKey: id) {
             try! realm.write {
                 realm.delete(object)
             }
@@ -33,8 +33,8 @@ class RealmManager {
     static func getCurrentDevice(id: Int) -> Device {
         let realm = try! Realm()
         
-        let currentDevice = realm.object(ofType: Device.self, forPrimaryKey: "\(id)")
+        let currentDevice = realm.object(ofType: Device.self, forPrimaryKey: id)
         
-        return currentDevice
+        return currentDevice!
     }
 }

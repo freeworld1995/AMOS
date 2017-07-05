@@ -15,11 +15,12 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
 
     // Input properties
     var id: Int!
+    var currentDevice: Device!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        currentDevice = RealmManager.getCurrentDevice(id: id)
     }
 
     @IBAction func turnSystemOn(_ sender: UIButton) {
@@ -69,8 +70,6 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 }

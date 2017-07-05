@@ -105,6 +105,7 @@
 			children = (
 				BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */,
 				BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */,
+				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
 			);
 			name = "Control Center";
 			sourceTree = "<group>";
@@ -161,7 +162,6 @@
 				BFA20DC21F0BF16B00CED788 /* Main3.storyboard */,
 				1B7857CC1F0BF9630050670D /* Main2.storyboard */,
 				1B7857CA1F0BF92E0050670D /* Main1.storyboard */,
-				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
 			);
 			path = AMOS;
 			sourceTree = "<group>";

@@ -86,6 +86,26 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
         return nil
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            switch indexPath.row {
+            case 0:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "callnumber") as! CallNumberSettingViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "smsnumber") as! SmsNumberSettingViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+        default:
+            break
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionCell", for: indexPath)
         

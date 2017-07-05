@@ -31,6 +31,7 @@ class PageViewController: UIPageViewController {
         delegate = self
         
         if let firstViewController = VCArr.first {
+            (firstViewController as! ControlCenterViewController).id = id
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
     }

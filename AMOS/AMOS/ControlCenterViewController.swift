@@ -33,7 +33,7 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
         
         let currentDevice = realm.object(ofType: Device.self, forPrimaryKey: id)
         messageVC.recipients = [currentDevice!.SIM]
-        messageVC.body = currentDevice?.type == 4 ? device4 : otherDevice
+        messageVC.body = currentDevice?.type == 3 ? device4 : otherDevice
         messageVC.messageComposeDelegate = self
         
         present(messageVC, animated: true)

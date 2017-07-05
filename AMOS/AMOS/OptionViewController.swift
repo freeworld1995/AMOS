@@ -14,7 +14,6 @@ class OptionViewController: UIViewController {
     
     lazy var data: [String] = {
         return [
-            "CÀI ĐẶT SĐT",
             "CÀI ĐẶT THỜI GIAN",
             "THAY ĐỔI MẬT KHẨU",
             "CÀI ĐẶT KHOÁ PHÍM",
@@ -34,6 +33,13 @@ class OptionViewController: UIViewController {
         ]
     }()
     
+    lazy var timeSetting: [String] = {
+        return [
+            "CÀI ĐẶT NHÓM THỜI GIAN TỰ ĐỘNG TẮT MỞ",
+            "CÀI ĐẶT VÙNG TẮT MỞ"
+        ]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,13 +53,44 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        switch section {
+        case 0:
+            return phoneSetting.count
+        case 1:
+            return timeSetting.count
+        case 2:
+            return data.count
+        default:
+            break
+        }
+        
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+             return "CÀI ĐẶT SĐT"
+        case 1:
+            return "CÀI ĐẶT TẮT MỞ THEO THỜI GIAN"
+        default:
+            break
+        }
+        
+        return nil
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "optionCell", for: indexPath)
         
-        cell.textLabel?.text = data[indexPath.row]
+        switch indexPath.section {
+        case 0:
+            cell.textLabel?.text = phoneSetting[indexPath.row]
+        case 1:
+            cell.textLabel?.text = timeSetting[indexPath.row]
+        default:
+            cell.textLabel?.text = data[indexPath.row]
+        }
         
         return cell
     }
@@ -61,5 +98,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
 
 // MARK: Methods
 extension OptionViewController {
-    
+    fileprivate func setupView() {
+        tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+    }
 }

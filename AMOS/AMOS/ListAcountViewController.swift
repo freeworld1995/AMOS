@@ -67,7 +67,7 @@ extension ListAcountViewController{
         // didselec
         
         let story = UIStoryboard.init(name: "Main2", bundle: nil)
-        let vc = story.instantiateViewController(withIdentifier: "page") as! ControlCenterViewController
+        let vc = story.instantiateViewController(withIdentifier: "pages") as! PageViewController
         vc.id = devices[indexPath.row].id
         
         self.navigationController?.pushViewController(vc, animated: true)

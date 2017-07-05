@@ -44,7 +44,7 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
             return nil
         }
         
-        let nextIndex = viewControllerIndex - 1
+        let nextIndex = viewControllerIndex + 1
         
         guard VCArr.count != nextIndex else {
             return nil

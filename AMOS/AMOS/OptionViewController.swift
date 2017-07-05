@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import RealmSwift
+import MessageUI
 
 class OptionViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     // Input properties
     var id: Int!
     var currentDevice: Device!
     
+    @IBOutlet weak var datePickerContainerBottom: NSLayoutConstraint!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     lazy var data: [String] = {
         return [
-            "CÀI ĐẶT THỜI GIAN",
+            "CÀI ĐẶT THỜI GIAN THỰC",
             "THAY ĐỔI MẬT KHẨU",
             "CÀI ĐẶT KHOÁ PHÍM",
             "THAY ĐỔI NỘI DUNG SMS",
@@ -49,7 +54,25 @@ class OptionViewController: UIViewController {
         
         currentDevice = RealmManager.getCurrentDevice(id: id)
     }
+    
+    // MARK: Actions
+    @IBAction func donePressed(_ sender: UIButton) {
+        
+        let timeFormatter = DateFormatter()
+        timeFormatter.dateFormat = "yyyymmddhhmmss"
+        
+        let stringDate = timeFormatter.string(from: datePicker.date)
+        let index = stringDate.index(stringDate.startIndex, offsetBy: 2)
 
+        let otherBody = currentDevice.type == 0 ? stringDate.substring(to: index) : "\(currentDevice.password)56\(stringDate)#"
+        
+        timeFormatter.dateFormat = "HH:mm"
+        timeFormatter.locale = Locale(identifier: "en_US_POSIX")
+        let device4String = timeFormatter.string(from: datePicker.date).components(separatedBy: ":").first
+        
+        createMessage(device4: device4String!, otherDevice: otherBody)
+        hideDatePicker()
+    }
 }
 
 // MARK: Datasoure, delegate
@@ -76,7 +99,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-             return "CÀI ĐẶT SĐT"
+            return "CÀI ĐẶT SĐT"
         case 1:
             return "CÀI ĐẶT TẮT MỞ THEO THỜI GIAN"
         default:
@@ -98,6 +121,14 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "smsnumber") as! SmsNumberSettingViewController
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+        case 2:
+            switch indexPath.row {
+            case 0:
+                setupDatePicker()
+                showDatePicker()
             default:
                 break
             }
@@ -123,8 +154,57 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 // MARK: Methods
-extension OptionViewController {
+extension OptionViewController: MFMessageComposeViewControllerDelegate {
     fileprivate func setupView() {
         tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+    }
+    
+    fileprivate func setupDatePicker() {
+        if currentDevice.type == 3 {
+            datePicker.datePickerMode = .time
+            datePicker.locale = Locale(identifier: "en_GB")
+        } else {
+            datePicker.datePickerMode = .dateAndTime
+        }
+    }
+    
+    fileprivate func showDatePicker() {
+        datePickerContainerBottom.constant = 0
+        
+        UIView.animate(withDuration: 0.8) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    fileprivate func hideDatePicker() {
+        datePickerContainerBottom.constant = -250
+        
+        UIView.animate(withDuration: 0.8) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    fileprivate func createMessage(device4: String, otherDevice: String) {
+        let messageVC = MFMessageComposeViewController()
+        
+        let realm = try! Realm()
+        
+        let currentDevice = realm.object(ofType: Device.self, forPrimaryKey: id)
+        messageVC.recipients = [currentDevice!.SIM]
+        messageVC.body = currentDevice?.type == 3 ? device4 : otherDevice
+        messageVC.messageComposeDelegate = self
+        
+        present(messageVC, animated: true)
+    }
+
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        switch result {
+        case .cancelled:
+            self.dismiss(animated: true, completion: nil)
+        case .failed:
+            self.dismiss(animated: true, completion: nil)
+        case .sent:
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }

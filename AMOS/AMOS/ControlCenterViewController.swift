@@ -57,6 +57,7 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
         
         present(messageVC, animated: true)
     }
+    
     @IBAction func showCamera(_ sender: Any) {
         UIApplication.shared.openURL(NSURL(string: "https://itunes.apple.com/vn/app/yoosee/id981863450?l=vi&mt=8")! as URL)
         

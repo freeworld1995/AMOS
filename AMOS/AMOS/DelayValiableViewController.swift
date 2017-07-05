@@ -19,8 +19,7 @@ class DelayValiableViewController: UIViewController , MFMessageComposeViewContro
     var currentDevice : Device!
     
     var type : Int!
-    
-    
+
     let dropdown1 = DropDown()
     let dropdown2 = DropDown()
     
@@ -68,9 +67,9 @@ class DelayValiableViewController: UIViewController , MFMessageComposeViewContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentDevice = RealmManager.getCurrentDevice(id: id)
         self.setUpDropDown4()
         self.setUpDropDown3()
-        currentDevice = RealmManager.getCurrentDevice(id: id)
         if(currentDevice.type == 3){
             self.viewDevice3.isHidden = true
         }
@@ -162,8 +161,6 @@ class DelayValiableViewController: UIViewController , MFMessageComposeViewContro
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 

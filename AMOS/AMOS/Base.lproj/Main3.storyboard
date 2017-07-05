@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -515,7 +515,7 @@
         <!--Volume Setting View Controller-->
         <scene sceneID="3TW-yt-XSq">
             <objects>
-                <viewController id="yvM-UF-pWt" customClass="VolumeSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="volumesetting" id="yvM-UF-pWt" customClass="VolumeSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HWC-cV-r8L"/>
                         <viewControllerLayoutGuide type="bottom" id="w67-gN-LAD"/>
@@ -925,7 +925,7 @@
         <!--Avalible Setting View Controller-->
         <scene sceneID="Thh-ze-rnh">
             <objects>
-                <viewController id="kSA-o4-NPg" customClass="AvalibleSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="availablesetting" id="kSA-o4-NPg" customClass="AvalibleSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gcA-LR-Kw4"/>
                         <viewControllerLayoutGuide type="bottom" id="3fx-CA-FvG"/>
@@ -1051,7 +1051,7 @@
         <!--Delay Valiable View Controller-->
         <scene sceneID="6yb-la-H2b">
             <objects>
-                <viewController id="aDV-Bo-cWK" customClass="DelayValiableViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="delayavailablesetting" id="aDV-Bo-cWK" customClass="DelayValiableViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lrm-da-FFQ"/>
                         <viewControllerLayoutGuide type="bottom" id="6db-rr-1Mf"/>

@@ -191,22 +191,72 @@
                                     <outlet property="delegate" destination="rUa-TO-FHO" id="8PC-lf-ieU"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-oA-wVN">
+                                <rect key="frame" x="0.0" y="667" width="375" height="250"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-oP-Ogm">
+                                        <rect key="frame" x="0.0" y="34" width="375" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="520962531.27321899">
+                                            <!--2017-07-05 15:48:51 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYU-uz-Zs9">
+                                        <rect key="frame" x="326" y="8" width="37" height="30"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="donePressed:" destination="rUa-TO-FHO" eventType="touchUpInside" id="wgw-EI-FCo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OMD-oP-Ogm" firstAttribute="leading" secondItem="3YT-oA-wVN" secondAttribute="leading" id="4qb-vz-Esc"/>
+                                    <constraint firstAttribute="height" constant="250" id="DYg-Gi-2jo"/>
+                                    <constraint firstAttribute="trailing" secondItem="OMD-oP-Ogm" secondAttribute="trailing" id="EQD-v6-03F"/>
+                                    <constraint firstItem="UYU-uz-Zs9" firstAttribute="top" secondItem="3YT-oA-wVN" secondAttribute="top" constant="8" id="Ls6-EH-FEo"/>
+                                    <constraint firstAttribute="trailing" secondItem="UYU-uz-Zs9" secondAttribute="trailing" constant="12" id="ZPt-aC-Lgs"/>
+                                    <constraint firstAttribute="bottom" secondItem="OMD-oP-Ogm" secondAttribute="bottom" id="xNj-70-Gp3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3YT-oA-wVN" secondAttribute="trailing" id="KOo-Fs-D4b"/>
                             <constraint firstAttribute="trailing" secondItem="P7K-Nh-DhB" secondAttribute="trailing" id="QmJ-tP-iNC"/>
                             <constraint firstItem="P7K-Nh-DhB" firstAttribute="leading" secondItem="d3s-hd-JvM" secondAttribute="leading" id="SAA-da-Cbh"/>
+                            <constraint firstItem="3YT-oA-wVN" firstAttribute="leading" secondItem="d3s-hd-JvM" secondAttribute="leading" id="X6G-Il-7Es"/>
                             <constraint firstItem="4ry-Ty-nUb" firstAttribute="top" secondItem="P7K-Nh-DhB" secondAttribute="bottom" id="iBy-ia-f9h"/>
+                            <constraint firstItem="4ry-Ty-nUb" firstAttribute="top" secondItem="3YT-oA-wVN" secondAttribute="bottom" constant="-250" id="mYK-99-mTV"/>
                             <constraint firstItem="P7K-Nh-DhB" firstAttribute="top" secondItem="d3s-hd-JvM" secondAttribute="top" id="wY3-Yc-Qu6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="OMD-oP-Ogm" id="J10-Mq-Wue"/>
+                        <outlet property="datePickerContainerBottom" destination="mYK-99-mTV" id="03X-8Z-FAw"/>
                         <outlet property="tableView" destination="P7K-Nh-DhB" id="CNF-a5-oHY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Hp-zG-35n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925.5999999999999" y="903.59820089955031"/>
+            <point key="canvasLocation" x="1934" y="904"/>
+        </scene>
+        <!--Time Setting View Controller-->
+        <scene sceneID="bdV-NO-Nug">
+            <objects>
+                <viewController id="uI7-VC-e9h" customClass="TimeSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="79d-xJ-Le8"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ct-8V-mTf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wJE-qU-l0C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8p-zP-HIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="900"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="YEL-Re-xTV">

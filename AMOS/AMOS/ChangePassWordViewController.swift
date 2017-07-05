@@ -42,10 +42,7 @@ class ChangePassWordViewController: UIViewController ,MFMessageComposeViewContro
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        let realm = try! Realm()
-        let data = realm.objects(Device.self)
-        currentDevice = data.first //realm.object(ofType: Device.self, forPrimaryKey: id)
-        // Do any additional setup after loading the view.
+        currentDevice = RealmManager.getCurrentDevice(id: id)
     }
     func dismissKeyboard() {
         

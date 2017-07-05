@@ -115,17 +115,11 @@ class CallNumberSettingViewController: UIViewController, MFMessageComposeViewCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        
 
-        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        let realm = try! Realm()
-        let data = realm.objects(Device.self)
-        currentDevice = data.first //realm.object(ofType: Device.self, forPrimaryKey: id)
+        currentDevice = RealmManager.getCurrentDevice(id: id)
     }
     
     

@@ -30,5 +30,11 @@ class RealmManager {
         }
     }
     
-    
+    static func getCurrentDevice(id: Int) -> Device {
+        let realm = try! Realm()
+        
+        let currentDevice = realm.object(ofType: Device.self, forPrimaryKey: "\(id)")
+        
+        return currentDevice
+    }
 }

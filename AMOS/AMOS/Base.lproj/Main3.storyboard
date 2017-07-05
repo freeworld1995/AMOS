@@ -11,6 +11,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Lock Keyboard View Controller-->
+        <scene sceneID="tRG-tc-aQr">
+            <objects>
+                <viewController storyboardIdentifier="lockkeyboard" id="V8R-bn-99v" customClass="LockKeyboardViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YFa-Wk-58L"/>
+                        <viewControllerLayoutGuide type="bottom" id="8nM-IM-dZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O9y-z5-0Qb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-L0-d75">
+                                <rect key="frame" x="94" y="105" width="187.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zXF-2J-Gvv"/>
+                                </constraints>
+                                <state key="normal" title="Bật khoá phím">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockOn:" destination="V8R-bn-99v" eventType="touchUpInside" id="K4k-Nc-qBk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA9-4M-GIY">
+                                <rect key="frame" x="94" y="196" width="187.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Huỷ khoá phím">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockOff:" destination="V8R-bn-99v" eventType="touchUpInside" id="IGD-LZ-W0d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hNB-L0-d75" firstAttribute="centerX" secondItem="O9y-z5-0Qb" secondAttribute="centerX" id="1Y6-gW-I1t"/>
+                            <constraint firstItem="hNB-L0-d75" firstAttribute="width" secondItem="O9y-z5-0Qb" secondAttribute="width" multiplier="1:2" id="AEP-ho-n5T"/>
+                            <constraint firstItem="sA9-4M-GIY" firstAttribute="height" secondItem="hNB-L0-d75" secondAttribute="height" id="B1A-V4-d3G"/>
+                            <constraint firstItem="hNB-L0-d75" firstAttribute="top" secondItem="YFa-Wk-58L" secondAttribute="bottom" constant="41" id="BdM-7q-ty5"/>
+                            <constraint firstItem="sA9-4M-GIY" firstAttribute="centerX" secondItem="hNB-L0-d75" secondAttribute="centerX" id="bHl-ke-Fhd"/>
+                            <constraint firstItem="sA9-4M-GIY" firstAttribute="top" secondItem="hNB-L0-d75" secondAttribute="bottom" constant="51" id="obK-EB-IUq"/>
+                            <constraint firstItem="sA9-4M-GIY" firstAttribute="width" secondItem="hNB-L0-d75" secondAttribute="width" id="vdw-bI-GSD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k19-Ct-5Wi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cL3-M9-Sy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="-1057"/>
+        </scene>
         <!--Call Number Setting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -462,7 +515,7 @@
         <!--Change Pass Word View Controller-->
         <scene sceneID="STo-ec-ilc">
             <objects>
-                <viewController id="XgR-yG-Zxx" customClass="ChangePassWordViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changepass" id="XgR-yG-Zxx" customClass="ChangePassWordViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1kM-5s-bf3"/>
                         <viewControllerLayoutGuide type="bottom" id="edb-9x-11V"/>
@@ -519,7 +572,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpk-a3-ctf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="-194.75262368815595"/>
+            <point key="canvasLocation" x="1654" y="-244"/>
         </scene>
         <!--Sms Number Setting View Controller-->
         <scene sceneID="X89-wk-lKk">
@@ -724,12 +777,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="XgR-yG-Zxx" kind="relationship" relationship="rootViewController" id="4Sk-Y2-36M"/>
+                        <segue destination="V8R-bn-99v" kind="relationship" relationship="rootViewController" id="Xfl-bY-EQl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgI-xh-VOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="-193"/>
+            <point key="canvasLocation" x="-346" y="-334"/>
         </scene>
     </scenes>
 </document>

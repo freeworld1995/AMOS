@@ -14,7 +14,7 @@ import RealmSwift
 class ControlCenterViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
     // Input properties
-    var id: String!
+    var id: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()

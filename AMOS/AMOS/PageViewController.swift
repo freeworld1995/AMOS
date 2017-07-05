@@ -22,7 +22,7 @@ class PageViewController: UIPageViewController {
     }
     
     // Input properties
-    var id: String!
+    var id: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()

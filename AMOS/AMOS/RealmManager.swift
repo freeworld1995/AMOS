@@ -20,10 +20,10 @@ class RealmManager {
         }
     }
     
-    static func deleteDevice(id: String) {
+    static func deleteDevice(id: Int) {
         let realm = try! Realm()
         
-        if let object = realm.object(ofType: Device.self, forPrimaryKey: id) {
+        if let object = realm.object(ofType: Device.self, forPrimaryKey: "\(id)") {
             try! realm.write {
                 realm.delete(object)
             }

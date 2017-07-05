@@ -27,6 +27,13 @@ class OptionViewController: UIViewController {
         ]
     }()
     
+    lazy var phoneSetting: [String] = {
+        return [
+            "CÀI ĐẶT SĐT GỌI ĐẾN",
+            "CÀI ĐẶT TIN NHẮN ĐẾN"
+        ]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -35,6 +42,10 @@ class OptionViewController: UIViewController {
 
 // MARK: Datasoure, delegate
 extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }

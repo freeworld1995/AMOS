@@ -40,6 +40,15 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-        
+        switch result {
+        case .cancelled:
+            self.dismiss(animated: true, completion: nil)
+        case .failed:
+            self.dismiss(animated: true, completion: nil)
+        case .sent:
+            self.dismiss(animated: true, completion: nil)
+        default:
+            break
+        }
     }
 }

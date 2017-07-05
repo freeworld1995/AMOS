@@ -22,6 +22,7 @@ class FormAcountViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var matKhau: UITextField!
     
     let arrayName = ["AM-3800G","AM-6800G","AM-GSM74/GSM74I","AM-KS999"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

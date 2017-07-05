@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
         <!--Call Number Setting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CallNumberSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="callnumber" id="BYZ-38-t0r" customClass="CallNumberSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -469,18 +470,61 @@
                     <view key="view" contentMode="scaleToFill" id="YE1-6y-3j1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mật khẩu mới" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXo-kE-bFU">
+                                <rect key="frame" x="24" y="131" width="327" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M4r-lV-YAf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nhập mật khẩu mới" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8k-Oe-ZIZ">
+                                <rect key="frame" x="24" y="95" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1H-7f-hDX">
+                                <rect key="frame" x="94" y="191" width="187.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wZf-dM-Zcn"/>
+                                </constraints>
+                                <state key="normal" title="gửi">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButton:" destination="XgR-yG-Zxx" eventType="touchUpInside" id="JZD-xi-cft"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hXo-kE-bFU" firstAttribute="top" secondItem="b8k-Oe-ZIZ" secondAttribute="bottom" constant="15" id="506-z9-GoK"/>
+                            <constraint firstItem="hXo-kE-bFU" firstAttribute="leading" secondItem="YE1-6y-3j1" secondAttribute="leadingMargin" constant="8" id="EFz-y7-6Lr"/>
+                            <constraint firstItem="b8k-Oe-ZIZ" firstAttribute="leading" secondItem="YE1-6y-3j1" secondAttribute="leadingMargin" constant="8" id="Fe9-VV-utz"/>
+                            <constraint firstItem="b8k-Oe-ZIZ" firstAttribute="top" secondItem="1kM-5s-bf3" secondAttribute="bottom" constant="31" id="GdN-DO-8Hx"/>
+                            <constraint firstItem="a1H-7f-hDX" firstAttribute="centerX" secondItem="YE1-6y-3j1" secondAttribute="centerX" id="e2K-1a-5rK"/>
+                            <constraint firstItem="a1H-7f-hDX" firstAttribute="width" secondItem="YE1-6y-3j1" secondAttribute="width" multiplier="1:2" id="nEx-tp-DIU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hXo-kE-bFU" secondAttribute="trailing" constant="8" id="x4D-AL-OXr"/>
+                            <constraint firstItem="a1H-7f-hDX" firstAttribute="top" secondItem="hXo-kE-bFU" secondAttribute="bottom" constant="30" id="yiX-Wh-bYV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kJQ-Mc-i1o"/>
+                    <connections>
+                        <outlet property="newPass" destination="hXo-kE-bFU" id="vUA-GQ-Uvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpk-a3-ctf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="-194"/>
+            <point key="canvasLocation" x="976.79999999999995" y="-194.75262368815595"/>
         </scene>
         <!--Sms Number Setting View Controller-->
         <scene sceneID="X89-wk-lKk">
             <objects>
-                <viewController id="IB4-9A-seb" customClass="SmsNumberSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="smsnumber" id="IB4-9A-seb" customClass="SmsNumberSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UBL-Rx-QC2"/>
                         <viewControllerLayoutGuide type="bottom" id="onE-Za-DRA"/>
@@ -490,7 +534,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMf-qC-7le">
-                                <rect key="frame" x="0.0" y="84" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="số thứ 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-cc-kif">
                                         <rect key="frame" x="8" y="10" width="203.5" height="30"/>

@@ -26,6 +26,24 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
         createMessage(device4: "888888,01", otherDevice: "12341#")
     }
     
+    
+    @IBAction func turnSystemOff(_ sender: Any) {
+        createMessage(device4: "888888,03", otherDevice: "12340#")
+    }
+    
+    
+    @IBAction func replayOn(_ sender: Any) {
+        createMessage(device4: "888888,05", otherDevice: "12343#")
+    }
+    
+    @IBAction func replayOff(_ sender: Any) {
+        createMessage(device4: "888888,06", otherDevice: "12344#")
+    }
+    
+    @IBAction func home(_ sender: Any) {
+        createMessage(device4: "888888,02", otherDevice: "12342#")
+    }
+    
     func createMessage(device4: String, otherDevice: String) {
         let messageVC = MFMessageComposeViewController()
         
@@ -37,6 +55,10 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
         messageVC.messageComposeDelegate = self
         
         present(messageVC, animated: true)
+    }
+    @IBAction func showCamera(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string: "https://itunes.apple.com/vn/app/yoosee/id981863450?l=vi&mt=8")! as URL)
+        
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {

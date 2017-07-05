@@ -26,7 +26,7 @@ class PageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         dataSource = self
         delegate = self
         

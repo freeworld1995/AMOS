@@ -13,6 +13,8 @@
 		1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7857D11F0C058D0050670D /* FormAcountViewController.swift */; };
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
 		BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */; };
+		BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */; };
+		BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
 		BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DC01F0BF16B00CED788 /* ViewController.swift */; };
 		BFA20DC41F0BF16B00CED788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA20DC21F0BF16B00CED788 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
+		BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA20DC01F0BF16B00CED788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +81,25 @@
 			isa = PBXGroup;
 			children = (
 				BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */,
+				BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */,
 			);
 			name = "Control Center";
+			sourceTree = "<group>";
+		};
+		BF61ABE71F0CBC280093C1F9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF61ABEA1F0CBC3C0093C1F9 /* Extension */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		BF61ABEA1F0CBC3C0093C1F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		BFA20DB21F0BF16B00CED788 = {
@@ -102,6 +123,7 @@
 		BFA20DBD1F0BF16B00CED788 /* AMOS */ = {
 			isa = PBXGroup;
 			children = (
+				BF61ABE71F0CBC280093C1F9 /* Helper */,
 				BFA20DD91F0C01B900CED788 /* Entity */,
 				1B7857CE1F0C02690050670D /* Add Acount */,
 				BFA20DD61F0C01B400CED788 /* RealmManager.swift */,
@@ -263,11 +285,13 @@
 			files = (
 				1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */,
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
+				BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */,
 				BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */,
 				BFA20DD81F0C01B400CED788 /* RealmManager.swift in Sources */,
 				BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */,
 				1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */,
 				BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */,
+				BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */,
 				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

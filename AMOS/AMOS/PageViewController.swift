@@ -9,29 +9,69 @@
 import UIKit
 
 class PageViewController: UIPageViewController {
-
+    
     lazy var VCArr: [UIViewController] = {
-        return [UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "controlCenter")]
+        return [
+            self.createViewController(name: "controlCenterVC"),
+            self.createViewController(name: "optionVC")
+        ]
     }()
+    
+    func createViewController(name: String) -> UIViewController {
+        return UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: name)
+    }
     
     // Input properties
     var id: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        dataSource = self
+        delegate = self
+        
+        if let firstViewController = VCArr.first {
+            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
-//extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-//    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-//        <#code#>
-//    }
-//}
+// MARK: Datasource, delegate
+extension PageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = VCArr.index(of: viewController) else {
+            return nil
+        }
+        
+        let nextIndex = viewControllerIndex - 1
+        
+        guard VCArr.count != nextIndex else {
+            return nil
+        }
+        
+        guard VCArr.count > nextIndex else {
+            return nil
+        }
+        
+        return VCArr[nextIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let viewControllerIndex = VCArr.index(of: viewController) else {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0 else {
+            return nil
+        }
+        
+        guard VCArr.count > previousIndex else {
+            return nil
+        }
+        
+        return VCArr[previousIndex]
+    }
+}

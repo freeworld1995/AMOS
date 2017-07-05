@@ -157,7 +157,7 @@
         <!--Page View Controller-->
         <scene sceneID="YEL-Re-xTV">
             <objects>
-                <pageViewController storyboardIdentifier="pages" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Djt-qQ-BUf" customClass="PageViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pages" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Djt-qQ-BUf" customClass="PageViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2f1-BU-1V7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1222" y="200"/>

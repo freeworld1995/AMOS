@@ -126,6 +126,7 @@
 				BF61ABE71F0CBC280093C1F9 /* Helper */,
 				BFA20DD91F0C01B900CED788 /* Entity */,
 				1B7857CE1F0C02690050670D /* Add Acount */,
+				BF08CE151F0C107500D68F10 /* Control Center */,
 				BFA20DD61F0C01B400CED788 /* RealmManager.swift */,
 				BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */,
 				BFA20DC01F0BF16B00CED788 /* ViewController.swift */,
@@ -136,7 +137,6 @@
 				1B7857CC1F0BF9630050670D /* Main2.storyboard */,
 				1B7857CA1F0BF92E0050670D /* Main1.storyboard */,
 				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
-				BF08CE151F0C107500D68F10 /* Control Center */,
 			);
 			path = AMOS;
 			sourceTree = "<group>";

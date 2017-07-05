@@ -171,6 +171,7 @@
 				TargetAttributes = {
 					BFA20DBA1F0BF16B00CED788 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6TR7MM2V64;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -394,6 +395,7 @@
 			baseConfigurationReference = 2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6TR7MM2V64;
 				INFOPLIST_FILE = AMOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lienket.software.AMOS;
@@ -407,6 +409,7 @@
 			baseConfigurationReference = EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6TR7MM2V64;
 				INFOPLIST_FILE = AMOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lienket.software.AMOS;

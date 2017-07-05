@@ -18,7 +18,7 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
     var currentDevice : Device!
     
     var select1 = ""
-    var select2 = 0
+    var select2 = 1
     
     let dropdown1 = DropDown()
     let dropdown2 = DropDown()
@@ -60,8 +60,22 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
         super.viewDidLoad()
         currentDevice = RealmManager.getCurrentDevice(id: id)
         self.setUpDropDown()
-        if(currentDevice.type == 3){
+        if(currentDevice.type != 0){
             self.viewTrangThai.isHidden = true
+        }
+        if(currentDevice.type == 2){
+            self.vongDay.setTitle("51", for: .normal)
+             self.select1 = "51"
+        }
+        else if (currentDevice.type == 1){
+            self.vongDay.setTitle("051", for: .normal)
+            self.select1 = "051"
+        }
+        else {
+            self.vongDay.setTitle("07", for: .normal)
+            self.select1 = "07"
+            self.select2 = 1
+            self.cheDo.setTitle("1", for: .normal)
         }
     }
     
@@ -73,11 +87,11 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
     func setUpDropDown(){
         var arr = [String]()
         var arr1 = [String]()
-        if(currentDevice.type == 0){
+        if(currentDevice.type == 2){
             arr = ["51","52","53","54"]
         }
         else if (currentDevice.type == 1){
-            arr = ["051","052"]
+            arr = ["051","052","053","054"]
         }
         else {
             arr = ["07","08","09","10"]
@@ -97,10 +111,10 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
         self.dropdown2.anchorView = cheDo
         self.dropdown2.dataSource = arr1
         self.dropdown2.bottomOffset = CGPoint(x: 0, y:(self.dropdown2.anchorView?.plainView.bounds.height)!)
-        dropdown1.selectionAction = { [unowned self] (index: Int, item: String) in
+        dropdown2.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             self.select2 = index  + 1
-            self.cheDo.setTitle(arr[index], for: .normal)
+            self.cheDo.setTitle(arr1[index], for: .normal)
             
             
         }

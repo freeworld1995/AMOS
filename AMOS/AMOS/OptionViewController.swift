@@ -152,10 +152,12 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             case 7:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
                 vc.type = 10
+                vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 8:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
                 vc.type = 11
+                vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             default:
                 break

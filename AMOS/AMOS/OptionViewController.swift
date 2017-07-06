@@ -149,6 +149,22 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 }
+            case 3:
+                if currentDevice.type == 3 {
+                    
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changemessage") as! ChangeMessageViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+            case 4:
+                if currentDevice.type == 3 {
+                    
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "statussetting") as! StatusSettingViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             case 5:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "volumesetting") as! VolumeSettingViewController
                 vc.id = id

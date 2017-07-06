@@ -47,16 +47,10 @@ class StatusSettingViewController: UIViewController , MFMessageComposeViewContro
         
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let realm = try! Realm()
-        let ae  = realm.objects(Device.self)
-        currentDevice = RealmManager.getCurrentDevice(id: (ae.first?.id)!)
-        
-//        currentDevice = RealmManager.getCurrentDevice(id: id)
+        currentDevice = RealmManager.getCurrentDevice(id: id)
         self.setUpDropDown3()
         
         
@@ -68,9 +62,7 @@ class StatusSettingViewController: UIViewController , MFMessageComposeViewContro
             self.zoneButton.setTitle("00", for: .normal)
             self.select1 = "00"
         }
-        
-        
-        
+
     }
 
     func setUpDropDown3(){
@@ -130,12 +122,9 @@ class StatusSettingViewController: UIViewController , MFMessageComposeViewContro
             self.status.setTitle(arr1[index], for: .normal)
             
         }
-        
-        
-        
+
     }
 
-    //
     func createMessage(device4: String, otherDevice: String) {
         let messageVC = MFMessageComposeViewController()
         
@@ -156,6 +145,5 @@ class StatusSettingViewController: UIViewController , MFMessageComposeViewContro
             self.dismiss(animated: true, completion: nil)
         }
     }
-
 
 }

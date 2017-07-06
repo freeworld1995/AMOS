@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         <!--Change Message View Controller-->
         <scene sceneID="wu1-f8-mgY">
             <objects>
-                <viewController id="kOQ-7Y-gcU" customClass="ChangeMessageViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changemessage" id="kOQ-7Y-gcU" customClass="ChangeMessageViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="moU-o0-bqK"/>
                         <viewControllerLayoutGuide type="bottom" id="jJh-LG-QV1"/>
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-Lp-YQa">
-                                <rect key="frame" x="142.5" y="84" width="224.5" height="40"/>
+                                <rect key="frame" x="142.5" y="40" width="224.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O9J-lC-4Zg"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vùng chọn đổi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLa-v1-fte">
-                                <rect key="frame" x="24" y="84" width="110.5" height="40"/>
+                                <rect key="frame" x="24" y="40" width="110.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yw5-f1-qdA"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53f-Xv-XXC">
-                                <rect key="frame" x="24" y="164" width="327" height="100"/>
+                                <rect key="frame" x="24" y="120" width="327" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="NML-LH-PwL"/>
@@ -52,7 +52,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MX-CU-Szl">
-                                <rect key="frame" x="94" y="318" width="187.5" height="40"/>
+                                <rect key="frame" x="94" y="274" width="187.5" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6u8-Se-nff"/>
@@ -1005,7 +1005,7 @@
         <!--Status Setting View Controller-->
         <scene sceneID="vku-fH-aqO">
             <objects>
-                <viewController id="VT6-AD-l7m" customClass="StatusSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statussetting" id="VT6-AD-l7m" customClass="StatusSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tc2-oK-JCX"/>
                         <viewControllerLayoutGuide type="bottom" id="6qI-cB-68y"/>
@@ -1106,7 +1106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thứ tự vòng dây" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiP-Wf-UaA">
-                                <rect key="frame" x="24" y="94" width="187.5" height="50"/>
+                                <rect key="frame" x="24" y="50" width="187.5" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yEj-ZG-viw"/>
                                 </constraints>
@@ -1115,7 +1115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlW-ho-HXx">
-                                <rect key="frame" x="221.5" y="94" width="145.5" height="50"/>
+                                <rect key="frame" x="221.5" y="50" width="145.5" height="50"/>
                                 <state key="normal" title="00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1124,7 +1124,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btk-Sr-MH8">
-                                <rect key="frame" x="94" y="242" width="187.5" height="40"/>
+                                <rect key="frame" x="94" y="198" width="187.5" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="959-qa-m3o"/>
@@ -1139,7 +1139,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eo-L3-uEz">
-                                <rect key="frame" x="0.0" y="152" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trạng thái" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1O-if-JRb">
                                         <rect key="frame" x="24" y="0.0" width="187.5" height="50"/>

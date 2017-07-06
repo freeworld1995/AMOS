@@ -68,7 +68,7 @@ class OptionViewController: UIViewController {
         
         let stringDate = timeFormatter.string(from: datePicker.date)
         let index = stringDate.index(stringDate.startIndex, offsetBy: 2)
-
+        
         let otherBody = currentDevice.type == 0 ? stringDate.substring(to: index) : "\(currentDevice.password)56\(stringDate)#"
         
         timeFormatter.dateFormat = "HH:mm"
@@ -138,10 +138,11 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             case 0:
                 setupDatePicker()
                 if currentDevice.type == 3 {
-                    hourPicker.setupPicker(type: .hourMinuteDay)
+                    
                 } else {
-                    hourPicker.isHidden = false
-                    hourPicker.setupPicker(type: .groupHourMinuteDay)
+                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "automatictime") as! AutomaticTimeSettingViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
                 }
                 showDatePicker()
             default:
@@ -154,7 +155,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
                 } else {
                     setupDatePicker()
-                    hourPicker.setupPicker(type: .onlyHourMinute)
+                    
                     showDatePicker()
                 }
             case 1:
@@ -231,31 +232,15 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+
 // MARK: Methods
-extension OptionViewController: MFMessageComposeViewControllerDelegate, datePickerDelegate {
+extension OptionViewController: MFMessageComposeViewControllerDelegate {
     fileprivate func setupView() {
-        containerView.addSubview(hourPicker)
-        hourPicker.snp.makeConstraints { (make) in
-            make.edges.equalTo(0)
-        }
-        hourPicker.delegate = self
-    }
-    
-    func cancel() {
-        hideDatePicker()
-    }
-    
-    func send(date: String) {
-        createMessage(device4: date, otherDevice: "")
+        
     }
     
     fileprivate func setupDatePicker() {
-        if currentDevice.type == 3 {
-            hourPicker.isHidden = false
-        } else {
-            hourPicker.isHidden = true
-            datePicker.datePickerMode = .dateAndTime
-        }
+        datePicker.datePickerMode = .dateAndTime
     }
     
     fileprivate func showDatePicker() {
@@ -286,7 +271,7 @@ extension OptionViewController: MFMessageComposeViewControllerDelegate, datePick
         
         present(messageVC, animated: true)
     }
-
+    
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         switch result {
         case .cancelled:

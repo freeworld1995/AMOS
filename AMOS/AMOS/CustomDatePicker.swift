@@ -11,17 +11,20 @@ import UIKit
 protocol datePickerDelegate: class {
     func cancel()
     func send(date: String)
+    func timeGroup(value: String)
+    func timeOnOff(value: String)
+    func day(value: String)
 }
 
 enum PickerType {
-    case onlyHourMinute
-    case hourMinuteDay
-    case groupHourMinuteDay
+    case timeGroup
+    case timeOnOff
+    case day
 }
 
 class CustomDatePicker: UIView {
     
-    var pickerType: PickerType = .onlyHourMinute
+    var pickerType: PickerType = .timeGroup
     
     weak var delegate: datePickerDelegate?
     var selectedValue = ""
@@ -36,12 +39,9 @@ class CustomDatePicker: UIView {
     }()
     
     lazy var dayArr: [String] = {
-        var array = [String]()
-        for i in 1...7 {
-            array.append("\(i)")
-        }
-        
-        return array
+        return [
+            "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ nhật"
+        ]
     }()
     
     lazy var group: [String] = {
@@ -69,75 +69,40 @@ class CustomDatePicker: UIView {
 // MARK: Datasource, delegate
 extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        switch pickerType {
-        case .onlyHourMinute:
-            return 2
-        case .hourMinuteDay:
-            return 3
-        case .groupHourMinuteDay:
-            return 4
-        }
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerType {
-        case .onlyHourMinute:
+        case .timeGroup:
+            return group.count
+        case .timeOnOff:
             return hourArr.count
-        case .hourMinuteDay:
-            if component == 2 {
-                return dayArr.count
-            } else {
-                return hourArr.count
-            }
-        case .groupHourMinuteDay:
-            if component == 0 {
-                return group.count
-            } else if component == 3 {
-                return dayArr.count
-            } else {
-                return hourArr.count
-            }
+        case .day:
+            return dayArr.count
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerType {
-        case .onlyHourMinute:
+        case .timeGroup:
+            return group[row]
+        case .timeOnOff:
             return hourArr[row]
-        case .hourMinuteDay:
-            if component == 2 {
-                return dayArr[row]
-            } else {
-                return hourArr[row]
-            }
-        case .groupHourMinuteDay:
-            if component == 0 {
-                return group[row]
-            } else if component == 3 {
-                return dayArr[row]
-            } else {
-                return hourArr[row]
-            }
+        case .day:
+            return dayArr[row]
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch pickerType {
-        case .onlyHourMinute:
-            selectedValue += hourArr[row]
-        case .hourMinuteDay:
-            let value1 = hourArr[pickerView.selectedRow(inComponent: 0)]
-            let value2 = hourArr[pickerView.selectedRow(inComponent: 1)]
-            let value3 = dayArr[pickerView.selectedRow(inComponent: 2)]
-            selectedValue = "\(value1)\(value2)\(value3)"
-        case .groupHourMinuteDay:
-            let value1 = group[pickerView.selectedRow(inComponent: 0)]
-            let value2 = hourArr[pickerView.selectedRow(inComponent: 1)]
-            let value3 = hourArr[pickerView.selectedRow(inComponent: 2)]
-            let value4 = dayArr[pickerView.selectedRow(inComponent: 3)]
-            selectedValue = "\(value1)\(value2)\(value3)\(value4)"
+        case .timeGroup:
+            delegate?.timeGroup(value: group[row])
+        case .timeOnOff:
+            delegate?.timeOnOff(value: hourArr[row])
+        case .day:
+            delegate?.day(value: "\(row + 1)")
         }
-        
     }
 }
 

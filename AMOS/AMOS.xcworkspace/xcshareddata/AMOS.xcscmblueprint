@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "adc49b66-cde6-46d1-b21f-44171f0fe414++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "adc49b66-cde6-46d1-b21f-44171f0fe414++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "adc49b66-cde6-46d1-b21f-44171f0fe414++505" : 9223372036854775807,
+    "9196F69941643C56CF8DB21E67F5D65C4A400B4F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "815AF5A0-B99E-488D-9CF4-D7DF052F9377",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "adc49b66-cde6-46d1-b21f-44171f0fe414++505" : "AMOS\/",
+    "9196F69941643C56CF8DB21E67F5D65C4A400B4F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AMOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AMOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freeworld1995\/AMOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9196F69941643C56CF8DB21E67F5D65C4A400B4F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/103.237.144.143\/svn-amos\/amos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "adc49b66-cde6-46d1-b21f-44171f0fe414++505"
+    }
+  ]
+}

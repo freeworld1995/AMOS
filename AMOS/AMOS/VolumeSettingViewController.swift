@@ -144,11 +144,11 @@ class VolumeSettingViewController: UIViewController,  MFMessageComposeViewContro
         }
         self.dropdown4.anchorView = volume3
         self.dropdown4.dataSource = arr
-        self.dropdown4.bottomOffset = CGPoint(x: 0, y:(self.dropdown3.anchorView?.plainView.bounds.height)!)
-        dropdown3.selectionAction = { [unowned self] (index: Int, item: String) in
+        self.dropdown4.bottomOffset = CGPoint(x: 0, y:(self.dropdown4.anchorView?.plainView.bounds.height)!)
+        dropdown4.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
             self.selectVolome3 = arr[index]
-            self.time4.setTitle(arr[index], for: .normal)
+            self.volume3.setTitle(arr[index], for: .normal)
             
             
         }

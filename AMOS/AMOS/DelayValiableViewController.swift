@@ -55,10 +55,10 @@ class DelayValiableViewController: UIViewController , MFMessageComposeViewContro
     
     @IBAction func send(_ sender: Any) {
         if (self.type == 10){
-            createMessage(device4: "\(currentDevice.password),26,\(selectDelay4),Y,\(selectRote4)", otherDevice: "\(currentDevice.password)51\(selectVolome3)")
+            createMessage(device4: "\(currentDevice.password),26,\(selectDelay4),Y,\(selectRote4)", otherDevice: "\(currentDevice.password)51\(selectVolome3)#")
         }
         else {
-            createMessage(device4: "\(currentDevice.password),26,X,\(selectDelay4),\(selectRote4)", otherDevice: "\(currentDevice.password)52\(selectVolome3)")
+            createMessage(device4: "\(currentDevice.password),26,X,\(selectDelay4),\(selectRote4)", otherDevice: "\(currentDevice.password)52\(selectVolome3)#")
         }
         
         

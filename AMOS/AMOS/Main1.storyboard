@@ -274,14 +274,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="zxK-Jb-rl7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGB-3K-8rh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGB-3K-8rh">
                                 <rect key="frame" x="10" y="36" width="355" height="183"/>
-                                <mutableString key="text">           AMOS là thương hiệu chuyên về các thiết bị an ninh và công nghệ đã được đăng ký thương hiệu do cục SHTT cấp. Phần mềm này được phát triển và hỗ trợ tốt nhất cho các dòng sản phẩm báo động chống trộm AMOS HOME. phần mềm sẽ hỗ trợ bạn điều khiển tắt mở từ xa cũng như cài đặt một số tính năng trong quá trình sử dụng và thiết lập cho thiết bị</mutableString>
+                                <string key="text">           AMOS là thương hiệu chuyên về các thiết bị an ninh và công nghệ đã được đăng ký thương hiệu do cục SHTT cấp. Phần mềm này được phát triển và hỗ trợ tốt nhất cho các dòng sản phẩm báo động chống trộm AMOS HOME. phần mềm sẽ hỗ trợ bạn điều khiển tắt mở từ xa cũng như cài đặt một số tính năng trong quá trình sử dụng và thiết lập cho thiết bị</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99089306310000003" green="1" blue="0.99438917459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Cảm ơn bạn đã sử dụng phần mềm, thiết bị chống trộm AMOS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-OY-9qI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Cảm ơn bạn đã sử dụng phần mềm, thiết bị chống trộm AMOS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuw-OY-9qI">
                                 <rect key="frame" x="10" y="237" width="355" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1I8-WZ-6vV"/>

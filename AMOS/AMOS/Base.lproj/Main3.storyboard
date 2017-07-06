@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fEx-w0-0nQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,6 +60,11 @@
                                 <state key="normal" title="Gửi">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="send:" destination="kOQ-7Y-gcU" eventType="touchUpInside" id="TDj-Q6-neP"/>
                                 </connections>
@@ -112,6 +117,11 @@
                                 <state key="normal" title="Bật khoá phím">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="lockOn:" destination="V8R-bn-99v" eventType="touchUpInside" id="K4k-Nc-qBk"/>
                                 </connections>
@@ -122,6 +132,11 @@
                                 <state key="normal" title="Huỷ khoá phím">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="lockOff:" destination="V8R-bn-99v" eventType="touchUpInside" id="IGD-LZ-W0d"/>
                                 </connections>
@@ -174,6 +189,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bxZ-Sy-jjx"/>
                                         </connections>
@@ -184,6 +204,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="llb-nW-ISf"/>
                                         </connections>
@@ -210,6 +235,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installTow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6U-fd-x4n"/>
                                         </connections>
@@ -220,6 +250,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteTow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B56-lY-Wgy"/>
                                         </connections>
@@ -246,6 +281,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPY-mO-Tkc"/>
                                         </connections>
@@ -256,6 +296,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYY-Pe-mde"/>
                                         </connections>
@@ -282,6 +327,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installOFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Se-tH-sME"/>
                                         </connections>
@@ -292,6 +342,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5g-q7-MHl"/>
                                         </connections>
@@ -318,6 +373,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQo-ZB-cJz"/>
                                         </connections>
@@ -328,6 +388,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fvg-tu-kEp"/>
                                         </connections>
@@ -354,6 +419,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBc-kN-5ha"/>
                                         </connections>
@@ -364,6 +434,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuO-vI-b99"/>
                                         </connections>
@@ -390,6 +465,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dC-Eo-XOp"/>
                                         </connections>
@@ -400,6 +480,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNM-9i-NWg"/>
                                         </connections>
@@ -426,6 +511,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pa-fO-7Z6"/>
                                         </connections>
@@ -436,6 +526,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOS-tc-z4s"/>
                                         </connections>
@@ -666,6 +761,11 @@
                                 <state key="normal" title="Gửi">
                                     <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="send:" destination="yvM-UF-pWt" eventType="touchUpInside" id="cT0-1V-Ab5"/>
                                 </connections>
@@ -784,6 +884,11 @@
                                 <state key="normal" title="gửi">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendButton:" destination="XgR-yG-Zxx" eventType="touchUpInside" id="JZD-xi-cft"/>
                                 </connections>
@@ -840,6 +945,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installOne:" destination="IB4-9A-seb" eventType="touchUpInside" id="2mx-RS-aF3"/>
                                         </connections>
@@ -850,6 +960,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteOne:" destination="IB4-9A-seb" eventType="touchUpInside" id="ERG-Dh-zcB"/>
                                         </connections>
@@ -867,6 +982,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installTow:" destination="IB4-9A-seb" eventType="touchUpInside" id="SEz-jy-g1y"/>
                                         </connections>
@@ -886,6 +1006,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteTwo:" destination="IB4-9A-seb" eventType="touchUpInside" id="AyC-Ql-ny2"/>
                                         </connections>
@@ -903,6 +1028,11 @@
                                         <state key="normal" title="cài">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="installThree:" destination="IB4-9A-seb" eventType="touchUpInside" id="dqv-9w-q15"/>
                                         </connections>
@@ -922,6 +1052,11 @@
                                         <state key="normal" title="xoá">
                                             <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="deleteThree:" destination="IB4-9A-seb" eventType="touchUpInside" id="GHI-82-Iqz"/>
                                         </connections>
@@ -1056,6 +1191,11 @@
                                 <state key="normal" title="Gửi">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="send3:" destination="VT6-AD-l7m" eventType="touchUpInside" id="PLB-ER-cyD"/>
                                 </connections>
@@ -1134,6 +1274,11 @@
                                 <state key="normal" title="Gửi">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="send:" destination="kSA-o4-NPg" eventType="touchUpInside" id="brc-hh-qoF"/>
                                 </connections>
@@ -1311,6 +1456,11 @@
                                 <state key="normal" title="Gửi">
                                     <color key="titleColor" red="0.99192950359999998" green="1" blue="0.99900987409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="send:" destination="aDV-Bo-cWK" eventType="touchUpInside" id="Qbk-Gp-TSc"/>
                                 </connections>

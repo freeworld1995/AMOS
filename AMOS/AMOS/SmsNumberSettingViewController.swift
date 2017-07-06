@@ -85,8 +85,6 @@ class SmsNumberSettingViewController: UIViewController,MFMessageComposeViewContr
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 

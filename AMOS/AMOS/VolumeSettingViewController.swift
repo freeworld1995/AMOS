@@ -176,8 +176,6 @@ class VolumeSettingViewController: UIViewController,  MFMessageComposeViewContro
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 

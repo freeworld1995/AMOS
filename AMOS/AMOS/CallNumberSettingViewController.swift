@@ -147,8 +147,6 @@ class CallNumberSettingViewController: UIViewController, MFMessageComposeViewCon
             self.dismiss(animated: true, completion: nil)
         case .sent:
             self.dismiss(animated: true, completion: nil)
-        default:
-            break
         }
     }
 }

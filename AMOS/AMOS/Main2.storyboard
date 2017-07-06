@@ -191,7 +191,7 @@
                                     <outlet property="delegate" destination="rUa-TO-FHO" id="8PC-lf-ieU"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-oA-wVN">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-oA-wVN" userLabel="Container View">
                                 <rect key="frame" x="0.0" y="667" width="375" height="250"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OMD-oP-Ogm">
@@ -240,6 +240,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="3YT-oA-wVN" id="6JL-5L-0NZ"/>
                         <outlet property="datePicker" destination="OMD-oP-Ogm" id="J10-Mq-Wue"/>
                         <outlet property="datePickerContainerBottom" destination="mYK-99-mTV" id="03X-8Z-FAw"/>
                         <outlet property="tableView" destination="P7K-Nh-DhB" id="CNF-a5-oHY"/>

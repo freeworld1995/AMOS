@@ -18,6 +18,8 @@
 		1B9196891F0D32800088A880 /* VolumeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9196881F0D32800088A880 /* VolumeSettingViewController.swift */; };
 		1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968B1F0D40A80088A880 /* DelayValiableViewController.swift */; };
 		1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */; };
+		1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */; };
+		1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */; };
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
 		BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */; };
 		BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23E04E1F0D5F5600F30F7E /* Utils.swift */; };
@@ -45,6 +47,8 @@
 		1B9196881F0D32800088A880 /* VolumeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeSettingViewController.swift; sourceTree = "<group>"; };
 		1B91968B1F0D40A80088A880 /* DelayValiableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayValiableViewController.swift; sourceTree = "<group>"; };
 		1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvalibleSettingViewController.swift; sourceTree = "<group>"; };
+		1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMessageViewController.swift; sourceTree = "<group>"; };
+		1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSettingViewController.swift; sourceTree = "<group>"; };
 		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		1B9196861F0D15460088A880 /* Option */ = {
 			isa = PBXGroup;
 			children = (
+				1BF80C341F0E2A9F0020EAF4 /* StatusSettting */,
+				1BF80C311F0E1EC20020EAF4 /* 6. changeMessager */,
 				1B91968D1F0D4A460088A880 /* 8. AvalibleSetting */,
 				1B91968A1F0D40790088A880 /* 10. Delay */,
 				1B9196871F0D31D50088A880 /* 7. VolumeSetting */,
@@ -145,6 +151,22 @@
 				1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */,
 			);
 			name = "8. AvalibleSetting";
+			sourceTree = "<group>";
+		};
+		1BF80C311F0E1EC20020EAF4 /* 6. changeMessager */ = {
+			isa = PBXGroup;
+			children = (
+				1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */,
+			);
+			name = "6. changeMessager";
+			sourceTree = "<group>";
+		};
+		1BF80C341F0E2A9F0020EAF4 /* StatusSettting */ = {
+			isa = PBXGroup;
+			children = (
+				1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */,
+			);
+			name = StatusSettting;
 			sourceTree = "<group>";
 		};
 		A8A74696E926726440B5D328 /* Frameworks */ = {
@@ -368,6 +390,7 @@
 				1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */,
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
 				BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */,
+				1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */,
 				BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */,
 				BFA20DD81F0C01B400CED788 /* RealmManager.swift in Sources */,
 				1B9196821F0D08C50088A880 /* ChangePassWordViewController.swift in Sources */,
@@ -382,6 +405,7 @@
 				1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */,
 				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,
 				1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */,
+				1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

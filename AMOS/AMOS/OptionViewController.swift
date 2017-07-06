@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import MessageUI
+import SnapKit
 
 class OptionViewController: UIViewController {
     
@@ -20,6 +21,9 @@ class OptionViewController: UIViewController {
     
     @IBOutlet weak var datePickerContainerBottom: NSLayoutConstraint!
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    @IBOutlet weak var containerView: UIView!
+    fileprivate let hourPicker = CustomDatePicker.fromNib() as! CustomDatePicker
     
     lazy var data: [String] = {
         return [
@@ -51,7 +55,7 @@ class OptionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
         currentDevice = RealmManager.getCurrentDevice(id: id)
     }
     
@@ -190,16 +194,28 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 // MARK: Methods
-extension OptionViewController: MFMessageComposeViewControllerDelegate {
+extension OptionViewController: MFMessageComposeViewControllerDelegate, datePickerDelegate {
     fileprivate func setupView() {
-        tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+        containerView.addSubview(hourPicker)
+        hourPicker.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
+        hourPicker.delegate = self
+    }
+    
+    func cancel() {
+        hideDatePicker()
+    }
+    
+    func send(date: String) {
+        createMessage(device4: date, otherDevice: "")
     }
     
     fileprivate func setupDatePicker() {
         if currentDevice.type == 3 {
-            datePicker.datePickerMode = .time
-            datePicker.locale = Locale(identifier: "en_GB")
+            hourPicker.isHidden = false
         } else {
+            hourPicker.isHidden = true
             datePicker.datePickerMode = .dateAndTime
         }
     }

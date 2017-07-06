@@ -21,6 +21,8 @@
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
 		BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */; };
 		BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23E04E1F0D5F5600F30F7E /* Utils.swift */; };
+		BF3E77161F0E1C9B004336FB /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */; };
+		BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */; };
 		BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */; };
 		BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
@@ -49,6 +51,8 @@
 		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
 		BF23E04E1F0D5F5600F30F7E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
+		BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,8 @@
 				BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */,
 				BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */,
 				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
+				BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */,
+				BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */,
 			);
 			name = "Control Center";
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				1B7857CB1F0BF92E0050670D /* Main1.storyboard in Resources */,
 				BFA20DC61F0BF16B00CED788 /* Assets.xcassets in Resources */,
 				1B7857CD1F0BF9630050670D /* Main2.storyboard in Resources */,
+				BF3E77161F0E1C9B004336FB /* CustomDatePicker.xib in Resources */,
 				BFA20DC41F0BF16B00CED788 /* Main3.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E5E60119263BB7CCBF4CE8AB /* [CP] Copy Pods Resources */ = {
@@ -366,6 +373,7 @@
 			files = (
 				1B9196851F0D13450088A880 /* LockKeyboardViewController.swift in Sources */,
 				1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */,
+				BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */,
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
 				BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */,
 				BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */,

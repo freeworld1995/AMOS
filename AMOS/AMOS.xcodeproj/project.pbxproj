@@ -13,6 +13,7 @@
 		1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7857D11F0C058D0050670D /* FormAcountViewController.swift */; };
 		1B8BCA921F0E9C0600DA360E /* zoneSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCA911F0E9C0600DA360E /* zoneSettingViewController.swift */; };
 		1B8BCA941F0EA7EE00DA360E /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCA931F0EA7EE00DA360E /* testViewController.swift */; };
+		1B8BCA971F0EAE7B00DA360E /* CancelSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCA961F0EAE7B00DA360E /* CancelSettingViewController.swift */; };
 		1B91967D1F0CCFA20088A880 /* CallNumberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91967C1F0CCFA20088A880 /* CallNumberSettingViewController.swift */; };
 		1B91967F1F0D036F0088A880 /* SmsNumberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91967E1F0D036F0088A880 /* SmsNumberSettingViewController.swift */; };
 		1B9196821F0D08C50088A880 /* ChangePassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9196811F0D08C50088A880 /* ChangePassWordViewController.swift */; };
@@ -48,6 +49,7 @@
 		1B7857D11F0C058D0050670D /* FormAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormAcountViewController.swift; sourceTree = "<group>"; };
 		1B8BCA911F0E9C0600DA360E /* zoneSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoneSettingViewController.swift; sourceTree = "<group>"; };
 		1B8BCA931F0EA7EE00DA360E /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		1B8BCA961F0EAE7B00DA360E /* CancelSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelSettingViewController.swift; sourceTree = "<group>"; };
 		1B91967C1F0CCFA20088A880 /* CallNumberSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallNumberSettingViewController.swift; sourceTree = "<group>"; };
 		1B91967E1F0D036F0088A880 /* SmsNumberSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsNumberSettingViewController.swift; sourceTree = "<group>"; };
 		1B9196811F0D08C50088A880 /* ChangePassWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassWordViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			name = 3.b.zoneSetting;
 			sourceTree = "<group>";
 		};
+		1B8BCA951F0EAE5900DA360E /* 3.a.2 CancelSetting */ = {
+			isa = PBXGroup;
+			children = (
+				1B8BCA961F0EAE7B00DA360E /* CancelSettingViewController.swift */,
+			);
+			name = "3.a.2 CancelSetting";
+			sourceTree = "<group>";
+		};
 		1B91967B1F0CCF550088A880 /* 1. CallNumberSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		1B9196861F0D15460088A880 /* Option */ = {
 			isa = PBXGroup;
 			children = (
+				1B8BCA951F0EAE5900DA360E /* 3.a.2 CancelSetting */,
 				1B8BCA901F0E9BD700DA360E /* 3.b.zoneSetting */,
 				1BF80C341F0E2A9F0020EAF4 /* StatusSettting */,
 				1BF80C311F0E1EC20020EAF4 /* 6. changeMessager */,
@@ -442,6 +453,7 @@
 				1B9196821F0D08C50088A880 /* ChangePassWordViewController.swift in Sources */,
 				BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */,
 				1B9196891F0D32800088A880 /* VolumeSettingViewController.swift in Sources */,
+				1B8BCA971F0EAE7B00DA360E /* CancelSettingViewController.swift in Sources */,
 				1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */,
 				BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */,
 				BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */,

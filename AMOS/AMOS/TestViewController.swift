@@ -32,7 +32,7 @@ class testViewController: UIViewController {
         // DatePicker
         self.datePicker = UIDatePicker(frame:CGRect(x: 0, y: 200, width: self.view.frame.size.width, height: 216))
         self.datePicker.backgroundColor = UIColor.white
-        self.datePicker.datePickerMode = UIDatePickerMode.time
+        self.datePicker.datePickerMode = UIDatePickerMode.date
         textField.inputView = self.datePicker
         self.view.addSubview(datePicker)
         // ToolBar

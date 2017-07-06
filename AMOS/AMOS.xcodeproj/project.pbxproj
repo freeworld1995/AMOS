@@ -11,6 +11,8 @@
 		1B7857CD1F0BF9630050670D /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B7857CC1F0BF9630050670D /* Main2.storyboard */; };
 		1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7857CF1F0C02930050670D /* ListAcountViewController.swift */; };
 		1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7857D11F0C058D0050670D /* FormAcountViewController.swift */; };
+		1B8BCA921F0E9C0600DA360E /* zoneSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCA911F0E9C0600DA360E /* zoneSettingViewController.swift */; };
+		1B8BCA941F0EA7EE00DA360E /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8BCA931F0EA7EE00DA360E /* testViewController.swift */; };
 		1B91967D1F0CCFA20088A880 /* CallNumberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91967C1F0CCFA20088A880 /* CallNumberSettingViewController.swift */; };
 		1B91967F1F0D036F0088A880 /* SmsNumberSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91967E1F0D036F0088A880 /* SmsNumberSettingViewController.swift */; };
 		1B9196821F0D08C50088A880 /* ChangePassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9196811F0D08C50088A880 /* ChangePassWordViewController.swift */; };
@@ -43,6 +45,8 @@
 		1B7857CC1F0BF9630050670D /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		1B7857CF1F0C02930050670D /* ListAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAcountViewController.swift; sourceTree = "<group>"; };
 		1B7857D11F0C058D0050670D /* FormAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormAcountViewController.swift; sourceTree = "<group>"; };
+		1B8BCA911F0E9C0600DA360E /* zoneSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoneSettingViewController.swift; sourceTree = "<group>"; };
+		1B8BCA931F0EA7EE00DA360E /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		1B91967C1F0CCFA20088A880 /* CallNumberSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallNumberSettingViewController.swift; sourceTree = "<group>"; };
 		1B91967E1F0D036F0088A880 /* SmsNumberSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsNumberSettingViewController.swift; sourceTree = "<group>"; };
 		1B9196811F0D08C50088A880 /* ChangePassWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassWordViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 			name = "Add Acount";
 			sourceTree = "<group>";
 		};
+		1B8BCA901F0E9BD700DA360E /* 3.b.zoneSetting */ = {
+			isa = PBXGroup;
+			children = (
+				1B8BCA911F0E9C0600DA360E /* zoneSettingViewController.swift */,
+			);
+			name = 3.b.zoneSetting;
+			sourceTree = "<group>";
+		};
 		1B91967B1F0CCF550088A880 /* 1. CallNumberSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		1B9196861F0D15460088A880 /* Option */ = {
 			isa = PBXGroup;
 			children = (
+				1B8BCA901F0E9BD700DA360E /* 3.b.zoneSetting */,
 				1BF80C341F0E2A9F0020EAF4 /* StatusSettting */,
 				1BF80C311F0E1EC20020EAF4 /* 6. changeMessager */,
 				1B91968D1F0D4A460088A880 /* 8. AvalibleSetting */,
@@ -250,6 +263,7 @@
 		BFA20DBD1F0BF16B00CED788 /* AMOS */ = {
 			isa = PBXGroup;
 			children = (
+				1B8BCA931F0EA7EE00DA360E /* testViewController.swift */,
 				1B9196861F0D15460088A880 /* Option */,
 				BF61ABE71F0CBC280093C1F9 /* Helper */,
 				BFA20DD91F0C01B900CED788 /* Entity */,
@@ -416,6 +430,7 @@
 				1B9196851F0D13450088A880 /* LockKeyboardViewController.swift in Sources */,
 				1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */,
 				BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */,
+				1B8BCA921F0E9C0600DA360E /* zoneSettingViewController.swift in Sources */,
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
 				BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */,
 				1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */,
@@ -429,6 +444,7 @@
 				BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */,
 				1B91967F1F0D036F0088A880 /* SmsNumberSettingViewController.swift in Sources */,
 				BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */,
+				1B8BCA941F0EA7EE00DA360E /* testViewController.swift in Sources */,
 				1B91967D1F0CCFA20088A880 /* CallNumberSettingViewController.swift in Sources */,
 				1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */,
 				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,

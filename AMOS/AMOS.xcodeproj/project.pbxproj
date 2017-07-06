@@ -31,6 +31,9 @@
 		BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */; };
 		BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */; };
 		BF7CA2411F0E950C004AC470 /* CustomPicker2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CA2401F0E950C004AC470 /* CustomPicker2.swift */; };
+		BF7CA2431F0EADDA004AC470 /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CA2421F0EADDA004AC470 /* RealTimeViewController.swift */; };
+		BF7CA2481F0EB101004AC470 /* CustomHourPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7CA2471F0EB101004AC470 /* CustomHourPicker.xib */; };
+		BF7CA24A1F0EB16E004AC470 /* CustomHourPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7CA2491F0EB16E004AC470 /* CustomHourPicker.swift */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
 		BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DC01F0BF16B00CED788 /* ViewController.swift */; };
 		BFA20DC41F0BF16B00CED788 /* Main3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA20DC21F0BF16B00CED788 /* Main3.storyboard */; };
@@ -67,6 +70,9 @@
 		BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BF7CA2401F0E950C004AC470 /* CustomPicker2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker2.swift; sourceTree = "<group>"; };
+		BF7CA2421F0EADDA004AC470 /* RealTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
+		BF7CA2471F0EB101004AC470 /* CustomHourPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHourPicker.xib; sourceTree = "<group>"; };
+		BF7CA2491F0EB16E004AC470 /* CustomHourPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHourPicker.swift; sourceTree = "<group>"; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFA20DC01F0BF16B00CED788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 				1B9196801F0D089B0088A880 /* 3. ChangePassWord */,
 				1B91967B1F0CCF550088A880 /* 1. CallNumberSetting */,
 				BF3E771E1F0E73B7004336FB /* 3. Automatic Time */,
+				BF7CA2441F0EAFB2004AC470 /* 2. Real Time */,
 			);
 			name = Option;
 			sourceTree = "<group>";
@@ -243,6 +250,16 @@
 				BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		BF7CA2441F0EAFB2004AC470 /* 2. Real Time */ = {
+			isa = PBXGroup;
+			children = (
+				BF7CA2421F0EADDA004AC470 /* RealTimeViewController.swift */,
+				BF7CA2471F0EB101004AC470 /* CustomHourPicker.xib */,
+				BF7CA2491F0EB16E004AC470 /* CustomHourPicker.swift */,
+			);
+			name = "2. Real Time";
 			sourceTree = "<group>";
 		};
 		BFA20DB21F0BF16B00CED788 = {
@@ -368,6 +385,7 @@
 				BFA20DC91F0BF16B00CED788 /* LaunchScreen.storyboard in Resources */,
 				1B7857CB1F0BF92E0050670D /* Main1.storyboard in Resources */,
 				BFA20DC61F0BF16B00CED788 /* Assets.xcassets in Resources */,
+				BF7CA2481F0EB101004AC470 /* CustomHourPicker.xib in Resources */,
 				1B7857CD1F0BF9630050670D /* Main2.storyboard in Resources */,
 				BF3E77161F0E1C9B004336FB /* CustomDatePicker.xib in Resources */,
 				BFA20DC41F0BF16B00CED788 /* Main3.storyboard in Resources */,
@@ -442,6 +460,8 @@
 				1B9196821F0D08C50088A880 /* ChangePassWordViewController.swift in Sources */,
 				BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */,
 				1B9196891F0D32800088A880 /* VolumeSettingViewController.swift in Sources */,
+				BF7CA2431F0EADDA004AC470 /* RealTimeViewController.swift in Sources */,
+				BF7CA24A1F0EB16E004AC470 /* CustomHourPicker.swift in Sources */,
 				1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */,
 				BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */,
 				BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */,

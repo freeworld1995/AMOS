@@ -13,16 +13,43 @@ protocol datePickerDelegate: class {
     func send(date: String)
 }
 
+enum PickerType {
+    case onlyHourMinute
+    case hourMinuteDay
+    case groupHourMinuteDay
+}
+
 class CustomDatePicker: UIView {
     
-    weak var delegate: datePickerDelegate?
-    var selectedValue: String?
+    var pickerType: PickerType = .onlyHourMinute
     
-    var data: [String] = {
-        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
+    weak var delegate: datePickerDelegate?
+    var selectedValue = ""
+    
+    lazy var hourArr: [String] = {
+        var array = [String]()
+        for i in 1...24 {
+            array.append("\(i)")
+        }
+        
+        return array
+    }()
+    
+    lazy var dayArr: [String] = {
+        var array = [String]()
+        for i in 1...7 {
+            array.append("\(i)")
+        }
+        
+        return array
+    }()
+    
+    lazy var group: [String] = {
+        return ["1", "2", "3", "4"]
     }()
     
     @IBOutlet weak var datePicker: UIPickerView!
+    var hasDay = false
     
     override func awakeFromNib() {
         datePicker.dataSource = self
@@ -34,25 +61,90 @@ class CustomDatePicker: UIView {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
-        guard selectedValue != nil else { return }
-        delegate?.send(date: selectedValue!)
+        guard !selectedValue.isEmpty else { return }
+        delegate?.send(date: selectedValue)
     }
 }
 
+// MARK: Datasource, delegate
 extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        switch pickerType {
+        case .onlyHourMinute:
+            return 2
+        case .hourMinuteDay:
+            return 3
+        case .groupHourMinuteDay:
+            return 4
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return data.count
+        switch pickerType {
+        case .onlyHourMinute:
+            return hourArr.count
+        case .hourMinuteDay:
+            if component == 2 {
+                return dayArr.count
+            } else {
+                return hourArr.count
+            }
+        case .groupHourMinuteDay:
+            if component == 0 {
+                return group.count
+            } else if component == 3 {
+                return dayArr.count
+            } else {
+                return hourArr.count
+            }
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return data[row]
+        switch pickerType {
+        case .onlyHourMinute:
+            return hourArr[row]
+        case .hourMinuteDay:
+            if component == 2 {
+                return dayArr[row]
+            } else {
+                return hourArr[row]
+            }
+        case .groupHourMinuteDay:
+            if component == 0 {
+                return group[row]
+            } else if component == 3 {
+                return dayArr[row]
+            } else {
+                return hourArr[row]
+            }
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedValue = data[row]
+        switch pickerType {
+        case .onlyHourMinute:
+            selectedValue += hourArr[row]
+        case .hourMinuteDay:
+            let value1 = hourArr[pickerView.selectedRow(inComponent: 0)]
+            let value2 = hourArr[pickerView.selectedRow(inComponent: 1)]
+            let value3 = dayArr[pickerView.selectedRow(inComponent: 2)]
+            selectedValue = "\(value1)\(value2)\(value3)"
+        case .groupHourMinuteDay:
+            let value1 = group[pickerView.selectedRow(inComponent: 0)]
+            let value2 = hourArr[pickerView.selectedRow(inComponent: 1)]
+            let value3 = hourArr[pickerView.selectedRow(inComponent: 2)]
+            let value4 = dayArr[pickerView.selectedRow(inComponent: 3)]
+            selectedValue = "\(value1)\(value2)\(value3)\(value4)"
+        }
+        
+    }
+}
+
+// MARK: Methods
+extension CustomDatePicker {
+    func setupPicker(type: PickerType) {
+        pickerType = type
+        datePicker.reloadAllComponents()
     }
 }

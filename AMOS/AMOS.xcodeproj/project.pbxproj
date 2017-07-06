@@ -25,6 +25,7 @@
 		BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23E04E1F0D5F5600F30F7E /* Utils.swift */; };
 		BF3E77161F0E1C9B004336FB /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */; };
 		BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */; };
+		BF3E771D1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E771C1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift */; };
 		BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */; };
 		BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */; };
 		BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA20DBE1F0BF16B00CED788 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 		BF23E04E1F0D5F5600F30F7E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
 		BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		BF3E771C1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticTimeSettingViewController.swift; sourceTree = "<group>"; };
 		BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BF61ABE81F0CBC380093C1F9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BFA20DBB1F0BF16B00CED788 /* AMOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				1B9196831F0D131C0088A880 /* 4. LockKeyboard */,
 				1B9196801F0D089B0088A880 /* 3. ChangePassWord */,
 				1B91967B1F0CCF550088A880 /* 1. CallNumberSetting */,
+				BF3E771E1F0E73B7004336FB /* 3. Automatic Time */,
 			);
 			name = Option;
 			sourceTree = "<group>";
@@ -187,10 +190,26 @@
 				BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */,
 				BF61ABE51F0CBBA90093C1F9 /* OptionViewController.swift */,
 				BFA20DDA1F0C09E600CED788 /* PageViewController.swift */,
+				BF3E771B1F0E7346004336FB /* Custom View */,
+			);
+			name = "Control Center";
+			sourceTree = "<group>";
+		};
+		BF3E771B1F0E7346004336FB /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
 				BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */,
 				BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */,
 			);
-			name = "Control Center";
+			name = "Custom View";
+			sourceTree = "<group>";
+		};
+		BF3E771E1F0E73B7004336FB /* 3. Automatic Time */ = {
+			isa = PBXGroup;
+			children = (
+				BF3E771C1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift */,
+			);
+			name = "3. Automatic Time";
 			sourceTree = "<group>";
 		};
 		BF61ABE71F0CBC280093C1F9 /* Helper */ = {
@@ -393,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3E771D1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift in Sources */,
 				1B9196851F0D13450088A880 /* LockKeyboardViewController.swift in Sources */,
 				1B7857D01F0C02930050670D /* ListAcountViewController.swift in Sources */,
 				BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */,

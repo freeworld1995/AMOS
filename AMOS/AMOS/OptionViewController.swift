@@ -49,7 +49,8 @@ class OptionViewController: UIViewController {
     lazy var timeSetting: [String] = {
         return [
             "CÀI ĐẶT NHÓM THỜI GIAN TỰ ĐỘNG TẮT MỞ",
-            "CÀI ĐẶT VÙNG TẮT MỞ"
+            "CÀI ĐẶT VÙNG TẮT MỞ",
+            "HUỶ CÀI ĐẶT"
         ]
     }()
     
@@ -132,11 +133,30 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             default:
                 break
             }
-        case 2:
+        case 1:
             switch indexPath.row {
             case 0:
                 setupDatePicker()
+                if currentDevice.type == 3 {
+                    hourPicker.setupPicker(type: .hourMinuteDay)
+                } else {
+                    hourPicker.isHidden = false
+                    hourPicker.setupPicker(type: .groupHourMinuteDay)
+                }
                 showDatePicker()
+            default:
+                break
+            }
+        case 2:
+            switch indexPath.row {
+            case 0:
+                if currentDevice.type == 3 {
+                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
+                } else {
+                    setupDatePicker()
+                    hourPicker.setupPicker(type: .onlyHourMinute)
+                    showDatePicker()
+                }
             case 1:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changepass") as! ChangePassWordViewController
                 vc.id = id

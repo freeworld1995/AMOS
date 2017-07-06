@@ -250,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="1934" y="904"/>
         </scene>
-        <!--Time Setting View Controller-->
+        <!--Automatic Time Setting View Controller-->
         <scene sceneID="bdV-NO-Nug">
             <objects>
-                <viewController id="uI7-VC-e9h" customClass="TimeSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uI7-VC-e9h" customClass="AutomaticTimeSettingViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="79d-xJ-Le8"/>
                         <viewControllerLayoutGuide type="bottom" id="1Ct-8V-mTf"/>
@@ -261,6 +261,12 @@
                     <view key="view" contentMode="scaleToFill" id="wJE-qU-l0C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TaF-hl-oww">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>

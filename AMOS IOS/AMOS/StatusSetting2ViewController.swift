@@ -21,6 +21,8 @@ class StatusSetting2ViewController: UIViewController {
     
     let dropdown = DropDown()
     
+    var stringArr = ["Chế độ báo trộm", "Độ trễ cảm biến", "Chế độ lặp", "Chế độ báo cháy", "Chế độ báo GAS", "Chế độ im lặng", "Chế độ SOS", "Chế độ SOS"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentDevice = RealmManager.getCurrentDevice(id: id)
@@ -41,7 +43,13 @@ class StatusSetting2ViewController: UIViewController {
     }
     
     func buttonTitle(_ zone: Int) -> String {
-        return zoneCollection.filter{ $0.tag == zone }.first!.titleLabel!.text!
+        
+        let title = zoneCollection.filter { $0.tag == zone }.first!.titleLabel!.text!
+        
+        let zone = zoneCollection.index { (button) -> Bool in
+            button.titleLabel!.text == title
+        }
+        return "\(zone! + 1)"
     }
 }
 
@@ -54,10 +62,10 @@ extension StatusSetting2ViewController: MFMessageComposeViewControllerDelegate {
             arr.append("\(i)")
         }
         
-        dropdown.dataSource = arr
+        dropdown.dataSource = stringArr
         
         dropdown.selectionAction = { [unowned self] (index: Int, item: String) in
-            self.zoneCollection.filter { $0.tag == self.selectedZone}.first?.setTitle(item, for: .normal)
+            self.zoneCollection.filter { $0.tag == self.selectedZone}.first?.setTitle(self.stringArr[index], for: .normal)
         }
     }
     

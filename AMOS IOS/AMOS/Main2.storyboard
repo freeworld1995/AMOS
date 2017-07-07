@@ -499,12 +499,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyw-rf-Ut1">
-                                <rect key="frame" x="155" y="452" width="64" height="30"/>
+                                <rect key="frame" x="93.5" y="452" width="187.5" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="LdD-Zr-n6g"/>
+                                    <constraint firstAttribute="height" constant="40" id="s2F-ft-r3D"/>
                                 </constraints>
-                                <state key="normal" title="Send">
+                                <state key="normal" title="Gửi">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -526,6 +526,7 @@
                             <constraint firstAttribute="trailing" secondItem="sUM-c8-1vi" secondAttribute="trailing" constant="16" id="6DF-MD-EBq"/>
                             <constraint firstAttribute="trailing" secondItem="Fof-yd-3hJ" secondAttribute="trailing" constant="16" id="6E2-zZ-FUC"/>
                             <constraint firstItem="HLU-s8-Ffm" firstAttribute="top" secondItem="zht-Qc-q87" secondAttribute="bottom" constant="16" id="76u-gI-NRQ"/>
+                            <constraint firstItem="cyw-rf-Ut1" firstAttribute="width" secondItem="oa0-1M-TS7" secondAttribute="width" multiplier="1:2" id="88N-yY-Bd7"/>
                             <constraint firstItem="omf-rr-pOr" firstAttribute="top" secondItem="TOc-SB-oPo" secondAttribute="bottom" constant="16" id="9WL-SL-Bfl"/>
                             <constraint firstItem="vni-Aj-yfc" firstAttribute="top" secondItem="7Pr-KK-rdK" secondAttribute="bottom" constant="16" id="B1f-nA-bhA"/>
                             <constraint firstItem="6p3-pO-Wl5" firstAttribute="leading" secondItem="oa0-1M-TS7" secondAttribute="leading" constant="16" id="EUj-xB-vUl"/>
@@ -644,70 +645,91 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGZ-sZ-D67">
-                                <rect key="frame" x="89" y="31" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="31" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="jom-To-m9H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-3h-0FC">
-                                <rect key="frame" x="89" y="69" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="69" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="OCm-mN-q2X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYs-FE-Q2t">
-                                <rect key="frame" x="89" y="107" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="107" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="YDF-FR-tsC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud7-Jo-Ppt">
-                                <rect key="frame" x="89" y="143" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="143" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="VTC-Eg-XJg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdb-2i-Dk5">
-                                <rect key="frame" x="89" y="180" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="180" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="7qv-Ac-Rzq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVC-So-H86">
-                                <rect key="frame" x="89" y="216" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="216" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="qAJ-7n-rbR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-jJ-fJO">
-                                <rect key="frame" x="89" y="254" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="254" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="lTD-lB-vjo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOf-oQ-Kob">
-                                <rect key="frame" x="89" y="291" width="30" height="30"/>
-                                <state key="normal" title="00"/>
+                                <rect key="frame" x="89" y="291" width="75" height="30"/>
+                                <state key="normal" title="Chọn vùng">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="zonePressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="6aU-ku-9TE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIJ-gR-qyo">
-                                <rect key="frame" x="155" y="342" width="64" height="30"/>
+                                <rect key="frame" x="93.5" y="385" width="187.5" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="cm6-BO-Olo"/>
+                                    <constraint firstAttribute="height" constant="40" id="9aN-Ep-FzV"/>
                                 </constraints>
-                                <state key="normal" title="Send">
+                                <state key="normal" title="Gửi">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendPressed:" destination="07G-aX-w5g" eventType="touchUpInside" id="Dwc-Ba-BXC"/>
                                 </connections>
@@ -728,7 +750,7 @@
                             <constraint firstItem="jxI-oR-UDF" firstAttribute="top" secondItem="38b-TK-uXH" secondAttribute="bottom" constant="16" id="7gC-Ly-z7S"/>
                             <constraint firstItem="38b-TK-uXH" firstAttribute="leading" secondItem="ucX-ur-giJ" secondAttribute="leading" constant="16" id="8qa-aO-fVA"/>
                             <constraint firstItem="Cnm-LW-Szr" firstAttribute="leading" secondItem="ucX-ur-giJ" secondAttribute="leading" constant="16" id="EJa-1Y-cqG"/>
-                            <constraint firstItem="mIJ-gR-qyo" firstAttribute="top" secondItem="iOf-oQ-Kob" secondAttribute="bottom" constant="21" id="FKG-ff-cF1"/>
+                            <constraint firstItem="mIJ-gR-qyo" firstAttribute="top" secondItem="iOf-oQ-Kob" secondAttribute="bottom" constant="64" id="FKG-ff-cF1"/>
                             <constraint firstItem="cGZ-sZ-D67" firstAttribute="leading" secondItem="cnu-Dx-RY7" secondAttribute="trailing" constant="16" id="Gco-uk-HE7"/>
                             <constraint firstItem="Fdb-2i-Dk5" firstAttribute="top" secondItem="Ud7-Jo-Ppt" secondAttribute="bottom" constant="7" id="HWj-kh-jox"/>
                             <constraint firstItem="daT-Bm-ouS" firstAttribute="leading" secondItem="ucX-ur-giJ" secondAttribute="leading" constant="16" id="IB7-xp-PkR"/>
@@ -749,6 +771,7 @@
                             <constraint firstItem="SFS-4r-gv2" firstAttribute="leading" secondItem="ucX-ur-giJ" secondAttribute="leading" constant="16" id="hm8-ic-tdY"/>
                             <constraint firstItem="iOf-oQ-Kob" firstAttribute="leading" secondItem="jxI-oR-UDF" secondAttribute="trailing" constant="13.5" id="iCc-lm-wIp"/>
                             <constraint firstItem="Ud7-Jo-Ppt" firstAttribute="leading" secondItem="daT-Bm-ouS" secondAttribute="trailing" constant="13.5" id="knc-mk-eHp"/>
+                            <constraint firstItem="mIJ-gR-qyo" firstAttribute="width" secondItem="ucX-ur-giJ" secondAttribute="width" multiplier="1:2" id="m0g-Uu-Txp"/>
                             <constraint firstItem="iOf-oQ-Kob" firstAttribute="top" secondItem="jCU-jJ-fJO" secondAttribute="bottom" constant="7" id="nDV-PP-bbG"/>
                             <constraint firstItem="EYs-FE-Q2t" firstAttribute="leading" secondItem="Cnm-LW-Szr" secondAttribute="trailing" constant="13.5" id="rd1-Rj-KOy"/>
                             <constraint firstItem="EYs-FE-Q2t" firstAttribute="top" secondItem="dpW-3h-0FC" secondAttribute="bottom" constant="8" id="sES-Rk-XoS"/>

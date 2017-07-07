@@ -194,7 +194,9 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 }
             case 3:
                 if currentDevice.type == 3 {
-                    
+                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "changemessage2") as! ChangeMessage2ViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changemessage") as! ChangeMessageViewController
                     vc.id = id
@@ -202,7 +204,9 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 }
             case 4:
                 if currentDevice.type == 3 {
-                    
+                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "statussetting2") as! StatusSetting2ViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "statussetting") as! StatusSettingViewController
                     vc.id = id

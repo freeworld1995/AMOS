@@ -1,5 +1,6 @@
 PODS:
   - DropDown (2)
+  - IQKeyboardManagerSwift (4.0.10)
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
   - Realm/Headers (2.8.3)
@@ -9,15 +10,17 @@ PODS:
 
 DEPENDENCIES:
   - DropDown
+  - IQKeyboardManagerSwift (= 4.0.10)
   - RealmSwift
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
   DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: e1bb84fa0e428781c2994ee8251db0b0ec562a8c
+PODFILE CHECKSUM: 015551fc3a4f871a670c37d75212273b95620c4c
 
 COCOAPODS: 1.2.0

@@ -1,0 +1,6 @@
+framework module Pods_AMOS {
+  umbrella header "Pods-AMOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

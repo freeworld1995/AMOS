@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oa3-s1-iZN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Tq3-hu-8X6">
+            <objects>
+                <viewController id="Oa3-s1-iZN" customClass="ViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhQ-Gt-7vQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="n5g-6p-31e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlZ-ud-79m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="0u7-E1-DFq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-RU-o3x">
+                                <rect key="frame" x="125" y="519" width="125" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vOo-RU-o3x" secondAttribute="height" multiplier="5:2" id="y3C-ks-Twg"/>
+                                </constraints>
+                                <state key="normal" title="Bắt đầu">
+                                    <color key="titleColor" red="0.99089306310000003" green="1" blue="0.99438917459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26G-TF-t9o">
+                                <rect key="frame" x="31" y="34" width="312" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="264" id="nfv-B7-dqH"/>
+                                </constraints>
+                                <string key="text">           AMOS là thương hiệu chuyên về các thiết bị an ninh và công nghệ đã được đăng ký thương hiệu do cục SHTT cấp. Phần mềm này được phát triển và hỗ trợ tốt nhất cho các dòng sản phẩm báo động chống trộm AMOS HOME. phần mềm sẽ hỗ trợ bạn điều khiển tắt mở từ xa cũng như cài đặt một số tính năng trong quá trình sử dụng và thiết lập cho thiết bị</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99089306310000003" green="1" blue="0.99438917459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="       Cảm ơn bạn đã sử dụng phần mềm, thiết bị chống trộm AMOS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09k-Jo-JD5">
+                                <rect key="frame" x="31" y="237" width="313" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="Aw2-nF-YQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99089306310000003" green="1" blue="0.99438917459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amos" translatesAutoresizingMaskIntoConstraints="NO" id="oho-jB-PNf">
+                                <rect key="frame" x="62.5" y="323" width="250" height="133.5"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oho-jB-PNf" secondAttribute="height" multiplier="15:8" id="bb1-Ce-Zqn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0u7-E1-DFq" firstAttribute="leading" secondItem="vlZ-ud-79m" secondAttribute="leading" id="3IW-Jg-Chq"/>
+                            <constraint firstItem="26G-TF-t9o" firstAttribute="centerX" secondItem="0u7-E1-DFq" secondAttribute="centerX" id="7WP-lW-a58"/>
+                            <constraint firstItem="09k-Jo-JD5" firstAttribute="leading" secondItem="vlZ-ud-79m" secondAttribute="leadingMargin" constant="15" id="8ss-sB-SB6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="09k-Jo-JD5" secondAttribute="trailing" constant="15" id="AYG-Wx-aTH"/>
+                            <constraint firstItem="26G-TF-t9o" firstAttribute="top" secondItem="fhQ-Gt-7vQ" secondAttribute="bottom" constant="14" id="EK7-au-2n5"/>
+                            <constraint firstItem="vOo-RU-o3x" firstAttribute="top" secondItem="oho-jB-PNf" secondAttribute="bottom" constant="62.5" id="FVT-HR-u5y"/>
+                            <constraint firstItem="09k-Jo-JD5" firstAttribute="centerX" secondItem="0u7-E1-DFq" secondAttribute="centerX" id="IIx-yh-y0Q"/>
+                            <constraint firstItem="n5g-6p-31e" firstAttribute="top" secondItem="0u7-E1-DFq" secondAttribute="bottom" id="IgI-Sy-FxJ"/>
+                            <constraint firstAttribute="trailing" secondItem="0u7-E1-DFq" secondAttribute="trailing" id="JWc-r4-AOs"/>
+                            <constraint firstItem="0u7-E1-DFq" firstAttribute="top" secondItem="vlZ-ud-79m" secondAttribute="top" id="N1R-JE-ldU"/>
+                            <constraint firstItem="oho-jB-PNf" firstAttribute="width" secondItem="0u7-E1-DFq" secondAttribute="width" multiplier="2:3" id="PtP-uu-3aV"/>
+                            <constraint firstItem="oho-jB-PNf" firstAttribute="centerX" secondItem="0u7-E1-DFq" secondAttribute="centerX" id="USC-XP-LIQ"/>
+                            <constraint firstItem="vOo-RU-o3x" firstAttribute="width" secondItem="oho-jB-PNf" secondAttribute="width" multiplier="1:2" id="XTi-z0-sqZ"/>
+                            <constraint firstItem="26G-TF-t9o" firstAttribute="leading" secondItem="vlZ-ud-79m" secondAttribute="leadingMargin" constant="15" id="Yt8-PB-glg"/>
+                            <constraint firstItem="09k-Jo-JD5" firstAttribute="top" secondItem="26G-TF-t9o" secondAttribute="bottom" id="kQf-Zo-T1s"/>
+                            <constraint firstItem="oho-jB-PNf" firstAttribute="top" secondItem="09k-Jo-JD5" secondAttribute="bottom" constant="20" id="y42-hH-rUw"/>
+                            <constraint firstItem="vOo-RU-o3x" firstAttribute="centerX" secondItem="0u7-E1-DFq" secondAttribute="centerX" id="yum-os-mai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="batdauButton" destination="vOo-RU-o3x" id="WaA-pp-Ps3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAK-Lq-bef" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="151"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amos" width="500" height="225"/>
+        <image name="bg" width="1920" height="1200"/>
+    </resources>
+</document>

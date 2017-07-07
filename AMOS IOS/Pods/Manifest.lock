@@ -1,0 +1,23 @@
+PODS:
+  - DropDown (2)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - DropDown
+  - RealmSwift
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: e1bb84fa0e428781c2994ee8251db0b0ec562a8c
+
+COCOAPODS: 1.2.0

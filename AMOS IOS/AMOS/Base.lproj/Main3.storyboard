@@ -25,6 +25,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-Lp-YQa">
                                 <rect key="frame" x="142.5" y="40" width="224.5" height="40"/>
+                                <color key="backgroundColor" red="0.89716846446700504" green="0.89716846446700504" blue="0.89716846446700504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O9J-lC-4Zg"/>
                                 </constraints>
@@ -57,6 +58,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MX-CU-Szl">
                                 <rect key="frame" x="94" y="274" width="187.5" height="40"/>
@@ -734,6 +740,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-mu-2cO">
                                 <rect key="frame" x="160" y="50" width="207" height="38"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="tắt còi">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -748,6 +755,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-8d-gqh">
                                 <rect key="frame" x="160" y="108" width="207" height="38"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="tắt âm thanh báo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -762,6 +770,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f74-al-MuW">
                                 <rect key="frame" x="160" y="165" width="207" height="38"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -806,6 +815,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaV-17-9tu">
                                         <rect key="frame" x="203.5" y="81" width="163.5" height="40"/>
+                                        <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="00">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1190,6 +1200,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-Lz-dvg">
                                 <rect key="frame" x="149" y="94" width="218" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="01">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1204,6 +1215,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ0-Q3-M1i">
                                 <rect key="frame" x="149" y="169" width="218" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1218,6 +1230,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vln-hn-5XU">
                                 <rect key="frame" x="149" y="232" width="218" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1322,6 +1335,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8m5-sk-yCq">
                                 <rect key="frame" x="108.5" y="50" width="258.5" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aNf-HU-aKR"/>
                                 </constraints>
@@ -1339,6 +1353,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXW-Gw-XAO">
                                 <rect key="frame" x="108.5" y="100" width="258.5" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="00:00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1429,6 +1444,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-mP-NbU">
                                         <rect key="frame" x="179.5" y="59" width="187.5" height="40"/>
+                                        <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Xi1-Ps-FZA"/>
                                         </constraints>
@@ -1528,6 +1544,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyP-Wn-PxZ">
                                 <rect key="frame" x="66" y="40.5" width="289" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hwW-oJ-DUs"/>
                                 </constraints>
@@ -1545,6 +1562,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya1-cJ-TVw">
                                 <rect key="frame" x="66" y="110" width="289" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Yx7-35-6CD"/>
                                 </constraints>
@@ -1681,6 +1699,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40U-Vn-fdR">
                                 <rect key="frame" x="203.5" y="50" width="163.5" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1701,6 +1720,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NP-37-lk4">
                                 <rect key="frame" x="203.5" y="135" width="163.5" height="40"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="chết độ mặc định">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1787,9 +1807,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlW-ho-HXx">
                                 <rect key="frame" x="221.5" y="50" width="145.5" height="50"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="00">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="vongDay:" destination="kSA-o4-NPg" eventType="touchUpInside" id="DJC-M0-xyv"/>
                                 </connections>
@@ -1828,9 +1854,15 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKH-JI-iKM">
                                         <rect key="frame" x="221.5" y="0.0" width="145.5" height="50"/>
+                                        <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="chết độ mặc định">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="cheDo:" destination="kSA-o4-NPg" eventType="touchUpInside" id="DFT-Di-3LQ"/>
                                         </connections>
@@ -1929,18 +1961,30 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-Mf-G84">
                                 <rect key="frame" x="160" y="50" width="207" height="38"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="delayTime4:" destination="aDV-Bo-cWK" eventType="touchUpInside" id="0gn-uG-AXb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPg-We-tq2">
                                 <rect key="frame" x="160" y="108" width="207" height="38"/>
+                                <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="roteTime:" destination="aDV-Bo-cWK" eventType="touchUpInside" id="seO-CL-TY2"/>
                                 </connections>
@@ -1959,9 +2003,15 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-pr-VWk">
                                         <rect key="frame" x="203.5" y="81" width="163.5" height="40"/>
+                                        <color key="backgroundColor" red="0.89716846449999998" green="0.89716846449999998" blue="0.89716846449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="00">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="delayTime3:" destination="aDV-Bo-cWK" eventType="touchUpInside" id="ZdP-L1-fKX"/>
                                         </connections>

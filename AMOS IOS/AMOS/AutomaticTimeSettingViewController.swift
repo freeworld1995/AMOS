@@ -28,15 +28,21 @@ class AutomaticTimeSettingViewController: UIViewController {
     @IBOutlet weak var dayBtn: UIButton!
     @IBOutlet weak var grouplbl: UILabel!
     
-    var select1 = ""
-    var select2 = ""
-    var select3 = ""
-    var select4 = ""
+    var select1 = "01"
+    var select2 = "00"
+    var select3 = "00"
+    var select4 = 1
     
     lazy var hourArr: [String] = {
         var array = [String]()
-        for i in 1...24 {
-            array.append("\(i)")
+        for i in 0...24 {
+            if(i<10){
+                array.append("0\(i)")
+            }
+            else {
+                array.append("\(i)")
+            }
+            
         }
         
         return array
@@ -124,7 +130,7 @@ extension AutomaticTimeSettingViewController: MFMessageComposeViewControllerDele
         }
         
         day.selectionAction = { [unowned self] (index: Int, item: String) in
-            self.select4 = item
+            self.select4 = index + 1
             self.dayBtn.setTitle(item, for: .normal)
         }
     }

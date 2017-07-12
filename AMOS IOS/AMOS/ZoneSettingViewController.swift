@@ -47,7 +47,7 @@ class ZoneSettingViewController: UIViewController, MFMessageComposeViewControlle
     
     
     @IBAction func send(_ sender: Any) {
-        createMessage(device4: "", otherDevice: "\(currentDevice.password)58\(select1)\(select2)\(select3)")
+        createMessage(device4: "", otherDevice: "\(currentDevice.password)58\(select1)\(select2)\(select3)#")
     }
     
     

@@ -32,7 +32,7 @@ class ChangePassWordViewController: UIViewController ,MFMessageComposeViewContro
         }
         
         if (!(newPass.text?.isEmpty)! && newPass.text?.characters.count ==  index) {
-            createMessage(device4: "\(currentDevice.password),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)")
+            createMessage(device4: "\(currentDevice.password),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)#")
         }
     }
     

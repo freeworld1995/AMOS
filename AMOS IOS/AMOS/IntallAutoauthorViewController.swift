@@ -95,7 +95,7 @@ class IntallAutoauthorViewController: UIViewController  , MFMessageComposeViewCo
     }
     
     @IBAction func send(_ sender: Any) {
-        createMessage(device4: "", otherDevice: "\(currentDevice.password)\(selectDate)\(selectTime)")
+        createMessage(device4: "", otherDevice: "\(currentDevice.password)\(selectDate)\(selectTime)#")
     }
     
     override func viewDidLoad() {

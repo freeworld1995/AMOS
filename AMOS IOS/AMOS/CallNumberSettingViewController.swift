@@ -33,82 +33,82 @@ class CallNumberSettingViewController: UIViewController, MFMessageComposeViewCon
     @IBAction func installOne(_ sender: Any) {
         
         if !(numberOne.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123431\((numberOne.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)31\((numberOne.text)!)#")
         }
         
     }
     @IBAction func installTow(_ sender: Any) {
         if !(numberTwo.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123433\((numberTwo.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)33\((numberTwo.text)!)#")
         }
 
     }
     @IBAction func installThree(_ sender: Any) {
         if !(numberThree.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123434\((numberThree.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)34\((numberThree.text)!)#")
         }
     }
     @IBAction func installOFour(_ sender: Any) {
         if !(numberFour.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123435\((numberFour.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)35\((numberFour.text)!)#")
         }
     }
     @IBAction func installFive(_ sender: Any) {
         if !(numberFive.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123436\((numberFive.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)36\((numberFive.text)!)#")
         }
     }
     @IBAction func installSix(_ sender: Any) {
         if !(numberSix.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123437\((numberSix.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)37\((numberSix.text)!)#")
         }
     }
     @IBAction func installSeven(_ sender: Any) {
         if !(numberSeven.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123438\((numberSeven.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)38\((numberSeven.text)!)#")
         }
     }
     @IBAction func installEight(_ sender: Any) {
         if !(numberEight.text?.isEmpty)! {
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123439\((numberEight.text)!)#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)39\((numberEight.text)!)#")
         }
     }
     
     // delete
     @IBAction func deleteOne(_ sender: Any) {
        
-            createMessage(device4: "\(currentDevice.password),,\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123431#")
+            createMessage(device4: "\(currentDevice.password),,\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)31#")
         
     }
     
     @IBAction func deleteTow(_ sender: Any) {
         
-            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),,\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123433#")
+            createMessage(device4: "\(currentDevice.password),\(numberOne.text!),,\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)33#")
         
     }
     
     @IBAction func deleteThree(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),,\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123434#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),,\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)34#")
     }
     
     @IBAction func deleteFour(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),,\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123435#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),,\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)35#")
     }
     
     @IBAction func deleteFive(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),,\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123436#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),,\(numberSix.text!),\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)36#")
     }
     
     @IBAction func deleteSix(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),,\(numberSeven.text!),\(numberEight.text!)", otherDevice: "123437#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),,\(numberSeven.text!),\(numberEight.text!)", otherDevice: "\(currentDevice.password)37#")
     }
     
     @IBAction func deleteSeven(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),,\(numberEight.text!)", otherDevice: "123438#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),,\(numberEight.text!)", otherDevice: "\(currentDevice.password)38#")
     }
     
     @IBAction func deleteEight(_ sender: Any) {
-        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),", otherDevice: "123439#")
+        createMessage(device4: "\(currentDevice.password),\(numberOne.text!),\(numberTwo.text!),\(numberThree.text!),\(numberFour.text!),\(numberFive.text!),\(numberSix.text!),\(numberSeven.text!),", otherDevice: "\(currentDevice.password)39#")
     }
     
     

@@ -24,34 +24,34 @@ class SmsNumberSettingViewController: UIViewController,MFMessageComposeViewContr
     
     @IBAction func installOne(_ sender: Any) {
         if !(numberOne.text?.isEmpty)! {
-            createMessage(device4: "", otherDevice: "12341\(numberOne.text!)#")
+            createMessage(device4: "", otherDevice: "\(currentDevice.password)1\(numberOne.text!)#")
         }
     }
     
     @IBAction func installTow(_ sender: Any) {
         
         if !(numberTow.text?.isEmpty)! {
-            createMessage(device4: "", otherDevice: "12342\(numberTow.text!)#")
+            createMessage(device4: "", otherDevice: "\(currentDevice.password)2\(numberTow.text!)#")
         }
     }
     
     @IBAction func installThree(_ sender: Any) {
         
         if !(numberThree.text?.isEmpty)! {
-            createMessage(device4: "", otherDevice: "12343\(numberThree.text!)#")
+            createMessage(device4: "", otherDevice: "\(currentDevice.password)3\(numberThree.text!)#")
         }
     }
     
     
     
     @IBAction func deleteOne(_ sender: Any) {
-        createMessage(device4: "", otherDevice: "12341#")
+        createMessage(device4: "", otherDevice: "\(currentDevice.password)1#")
     }
     @IBAction func deleteTwo(_ sender: Any) {
-        createMessage(device4: "", otherDevice: "12342#")
+        createMessage(device4: "", otherDevice: "\(currentDevice.password)2#")
     }
     @IBAction func deleteThree(_ sender: Any) {
-        createMessage(device4: "", otherDevice: "12343#")
+        createMessage(device4: "", otherDevice: "\(currentDevice.password)3#")
     }
     
     override func viewDidLoad() {

@@ -25,6 +25,11 @@ class ListAcountViewController: UIViewController , UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.barTintColor =  UIColor.init(red: 12/255, green: 160/255, blue: 4/255, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        let textAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = textAttributes
+        
         let result = realm.objects(Device.self)
         self.devices = Array(result)
         

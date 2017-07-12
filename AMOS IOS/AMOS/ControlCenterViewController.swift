@@ -19,7 +19,7 @@ class ControlCenterViewController: UIViewController, MFMessageComposeViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         currentDevice = RealmManager.getCurrentDevice(id: id)
     }
 

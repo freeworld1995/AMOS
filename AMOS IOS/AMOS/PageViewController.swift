@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PageViewController: UIPageViewController {
     
@@ -17,6 +18,24 @@ class PageViewController: UIPageViewController {
         ]
     }()
     
+    var pageControl = UIPageControl()
+    
+    func configurePageControl() {
+        // The total number of pages that are available is based on how many available colors we have.
+        pageControl = UIPageControl(frame: CGRect.zero)
+        self.pageControl.numberOfPages = VCArr.count
+        self.pageControl.currentPage = 0
+        self.pageControl.tintColor = .green
+        self.pageControl.pageIndicatorTintColor = .gray
+        self.pageControl.currentPageIndicatorTintColor = .green
+        self.view.addSubview(pageControl)
+        pageControl.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.height.equalTo(50)
+            make.bottom.equalToSuperview().offset(-50)
+        }
+    }
+    
     func createViewController(name: String) -> UIViewController {
         return UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: name)
     }
@@ -26,6 +45,7 @@ class PageViewController: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         dataSource = self
         delegate = self
@@ -38,6 +58,7 @@ class PageViewController: UIPageViewController {
         if let optionVC = VCArr.last {
             (optionVC as! OptionViewController).id = id
         }
+        configurePageControl()
     }
     
 }
@@ -78,5 +99,10 @@ extension PageViewController: UIPageViewControllerDataSource, UIPageViewControll
         }
         
         return VCArr[previousIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = VCArr.index(of: pageContentViewController)!
     }
 }

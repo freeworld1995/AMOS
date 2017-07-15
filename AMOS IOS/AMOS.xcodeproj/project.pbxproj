@@ -22,6 +22,7 @@
 		1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */; };
 		1BA2FB351F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */; };
 		1BED23F01F1A67E50029114D /* VKCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23EF1F1A67E50029114D /* VKCheckbox.swift */; };
+		1BED23F21F1A77B60029114D /* Automatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23F11F1A77B60029114D /* Automatic.swift */; };
 		1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */; };
 		1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */; };
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
@@ -64,6 +65,7 @@
 		1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvalibleSettingViewController.swift; sourceTree = "<group>"; };
 		1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntallAutoauthorViewController.swift; sourceTree = "<group>"; };
 		1BED23EF1F1A67E50029114D /* VKCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKCheckbox.swift; sourceTree = "<group>"; };
+		1BED23F11F1A77B60029114D /* Automatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automatic.swift; sourceTree = "<group>"; };
 		1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMessageViewController.swift; sourceTree = "<group>"; };
 		1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSettingViewController.swift; sourceTree = "<group>"; };
 		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		BF3E771E1F0E73B7004336FB /* 3. Automatic Time */ = {
 			isa = PBXGroup;
 			children = (
+				1BED23F11F1A77B60029114D /* Automatic.swift */,
 				BF3E771C1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift */,
 			);
 			name = "3. Automatic Time";
@@ -511,6 +514,7 @@
 				1B8BCA941F0EA7EE00DA360E /* CancelZoneViewController.swift in Sources */,
 				1B91967D1F0CCFA20088A880 /* CallNumberSettingViewController.swift in Sources */,
 				1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */,
+				1BED23F21F1A77B60029114D /* Automatic.swift in Sources */,
 				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,
 				1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */,
 				1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */,

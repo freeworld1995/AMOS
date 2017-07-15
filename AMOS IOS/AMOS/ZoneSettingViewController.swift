@@ -19,7 +19,7 @@ class ZoneSettingViewController: UIViewController, MFMessageComposeViewControlle
     let dropdown2 = DropDown()
     let dropdown3 = DropDown()
   
-    var select1 = 1
+    var select1 = ""
     var select2 = ""
     var select3 = ""
     
@@ -89,7 +89,7 @@ class ZoneSettingViewController: UIViewController, MFMessageComposeViewControlle
         self.dropdown1.bottomOffset = CGPoint(x: 0, y:(self.dropdown1.anchorView?.plainView.bounds.height)!)
         dropdown1.selectionAction = { [unowned self] (index: Int, item: String) in
             print("Selected item: \(item) at index: \(index)")
-            self.select1 = index + 1
+            self.select1 = arr[index]
             self.timeGroup.setTitle(arr[index], for: .normal)
             
             

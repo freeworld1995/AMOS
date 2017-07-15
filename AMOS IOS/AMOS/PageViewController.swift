@@ -27,12 +27,12 @@ class PageViewController: UIPageViewController {
         self.pageControl.currentPage = 0
         self.pageControl.tintColor = .green
         self.pageControl.pageIndicatorTintColor = .gray
-        self.pageControl.currentPageIndicatorTintColor = .green
+        self.pageControl.currentPageIndicatorTintColor = UIColor.init(red: 12/255, green: 160/255, blue: 4/255, alpha: 1)
         self.view.addSubview(pageControl)
         pageControl.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.height.equalTo(50)
-            make.bottom.equalToSuperview().offset(-50)
+            make.bottom.equalToSuperview().offset(-30)
         }
     }
     

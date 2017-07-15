@@ -27,12 +27,11 @@ class OptionViewController: UIViewController {
     
     lazy var data: [String] = {
         return [
-            "CÀI ĐẶT THỜI GIAN THỰC",
             "THAY ĐỔI MẬT KHẨU",
             "CÀI ĐẶT KHOÁ PHÍM",
             "THAY ĐỔI NỘI DUNG SMS",
             "CÀI ĐẶT TRẠNG THÁI CHO CÁC VÙNG",
-            "CÀI ĐẶT ÂM LƯỢNG CÒI HỤ",
+            "CÀI ĐẶT ÂM LƯỢNG CÒI BÁO ĐỘNG",
             "CÀI ĐẶT CẢM BIẾN CÓ DÂY",
             "CÀI ĐẶT ĐỘ TRỄ TRUNG TÂM",
             "CÀI ĐẶT ĐỘ TRỄ CẢM BIẾN"
@@ -48,6 +47,7 @@ class OptionViewController: UIViewController {
     
     lazy var timeSetting: [String] = {
         return [
+            "CÀI ĐẶT THỜI GIAN THỰC",
             "CÀI ĐẶT NHÓM THỜI GIAN TỰ ĐỘNG TẮT MỞ",
             "CÀI ĐẶT VÙNG TẮT MỞ",
             "HUỶ CÀI ĐẶT"
@@ -127,39 +127,46 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 1:
-                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "smsnumber") as! SmsNumberSettingViewController
-                vc.id = id
-                navigationController?.pushViewController(vc, animated: true)
+                if currentDevice.type == 3 {
+                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "smsnumber") as! SmsNumberSettingViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
             default:
                 break
             }
         case 1:
             switch indexPath.row {
             case 0:
-//                setupDatePicker()
-//                if currentDevice.type == 3 {
-//                    
-//                } else {
-                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "automatictime") as! AutomaticTimeSettingViewController
+                if currentDevice.type == 3 {
+                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
+                } else {
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "installAuto") as! IntallAutoauthorViewController
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
-//                }
-//                showDatePicker()
+                }
             case 1:
+                
+                let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "automatictime") as! AutomaticTimeSettingViewController
+                vc.id = id
+                navigationController?.pushViewController(vc, animated: true)
+            case 2:
                 
                 if currentDevice.type == 3 {
                     
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
                     
                 } else {
-                
+                    
                     let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "zonesetting") as! ZoneSettingViewController
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                     
                 }
                 
-            case 2:
+            case 3:
                 
                 
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "cancelzone") as! CancelSettingViewController
@@ -172,19 +179,12 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             }
         case 2:
             switch indexPath.row {
+                
             case 0:
-                if currentDevice.type == 3 {
-                    Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
-                } else {
-                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "installAuto") as! IntallAutoauthorViewController
-                    vc.id = id
-                    navigationController?.pushViewController(vc, animated: true)
-                }
-            case 1:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changepass") as! ChangePassWordViewController
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
-            case 2:
+            case 1:
                 if currentDevice.type == 3 {
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
                 } else {
@@ -192,7 +192,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 }
-            case 3:
+            case 2:
                 if currentDevice.type == 3 {
                     let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "changemessage2") as! ChangeMessage2ViewController
                     vc.id = id
@@ -202,7 +202,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 }
-            case 4:
+            case 3:
                 if currentDevice.type == 3 {
                     let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "statussetting2") as! StatusSetting2ViewController
                     vc.id = id
@@ -212,11 +212,11 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 }
-            case 5:
+            case 4:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "volumesetting") as! VolumeSettingViewController
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
-            case 6:
+            case 5:
                 if currentDevice.type == 3 {
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
                 } else {
@@ -224,12 +224,12 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 }
-            case 7:
+            case 6:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
                 vc.type = 10
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
-            case 8:
+            case 7:
                 let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "delayavailablesetting") as! DelayValiableViewController
                 vc.type = 11
                 vc.id = id

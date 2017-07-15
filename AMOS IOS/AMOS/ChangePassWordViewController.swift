@@ -10,6 +10,7 @@ import UIKit
 import RealmSwift
 import Messages
 import MessageUI
+import Realm
 
 class ChangePassWordViewController: UIViewController ,MFMessageComposeViewControllerDelegate,UITextFieldDelegate {
     
@@ -32,7 +33,28 @@ class ChangePassWordViewController: UIViewController ,MFMessageComposeViewContro
         }
         
         if (!(newPass.text?.isEmpty)! && newPass.text?.characters.count ==  index) {
-            createMessage(device4: "\(currentDevice.password),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)#")
+            
+            let oldPass  = currentDevice.password
+            currentDevice.password = newPass.text!
+            
+            // update Device Realm
+            
+            
+//            let realm = try! Realm()
+//            let devices = realm.objects(Device.self).filter("id = %d", currentDevice.id)
+//            
+//            
+//            if let device = devices.first {
+//                try! realm.write {
+//                    device.password = newPass.text!
+//                }
+//            }
+
+            createMessage(device4: "\(oldPass),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)#")
+            
+           
+            
+            
         }
     }
     

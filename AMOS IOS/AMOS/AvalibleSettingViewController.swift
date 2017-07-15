@@ -75,7 +75,6 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
             self.vongDay.setTitle("07", for: .normal)
             self.select1 = "07"
             self.select2 = 1
-            self.cheDo.setTitle("1", for: .normal)
         }
     }
     

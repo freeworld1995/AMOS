@@ -31,26 +31,26 @@ class ChangePasswordPage1ViewController: UIViewController {
 
     @IBAction func cap1Pressed(_ sender: UIButton) {
         let password = currentDevice.password
-        let device4Body = "\(password)241\(vung1.text!)\(vung2.text!)"
+        let device4Body = "\(password),241,\(vung1.text!),\(vung2.text!)"
         
         createMessage(device4: device4Body, otherDevice: "")
     }
     
     @IBAction func cap2Pressed(_ sender: UIButton) {
         let password = currentDevice.password
-        let device4Body = "\(password)242\(vung3.text!)\(vung4.text!)"
+        let device4Body = "\(password),242,\(vung3.text!),\(vung4.text!)"
         createMessage(device4: device4Body, otherDevice: "")
     }
     
     @IBAction func cap3Pressed(_ sender: UIButton) {
         let password = currentDevice.password
-        let device4Body = "\(password)243\(vung5.text!)\(vung6.text!)"
+        let device4Body = "\(password),243,\(vung5.text!),\(vung6.text!)"
         createMessage(device4: device4Body, otherDevice: "")
     }
     
     @IBAction func cap4Pressed(_ sender: UIButton) {
         let password = currentDevice.password
-        let device4Body = "\(password)244\(vung7.text!)\(vung8.text!)"
+        let device4Body = "\(password),244,\(vung7.text!),\(vung8.text!)"
         createMessage(device4: device4Body, otherDevice: "")
     }
 }

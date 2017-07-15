@@ -22,11 +22,15 @@
 		1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */; };
 		1BA2FB351F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */; };
 		1BED23F01F1A67E50029114D /* VKCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23EF1F1A67E50029114D /* VKCheckbox.swift */; };
-		1BED23F21F1A77B60029114D /* Automatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23F11F1A77B60029114D /* Automatic.swift */; };
 		1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */; };
 		1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */; };
 		83AF81AAF53D1F1496514210 /* Pods_AMOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */; };
 		BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */; };
+		BF205D1C1F1A6D00003E5427 /* ChangeMessagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF205D1B1F1A6D00003E5427 /* ChangeMessagePageViewController.swift */; };
+		BF205D1E1F1A6DB9003E5427 /* ChangePasswordPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF205D1D1F1A6DB9003E5427 /* ChangePasswordPage1ViewController.swift */; };
+		BF205D201F1A6E5B003E5427 /* ChangePasswordPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF205D1F1F1A6E5B003E5427 /* ChangePasswordPage2ViewController.swift */; };
+		BF205D221F1A7E3C003E5427 /* StatusSetting2Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF205D211F1A7E3C003E5427 /* StatusSetting2Page2ViewController.swift */; };
+		BF205D241F1A8465003E5427 /* StatusSettingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF205D231F1A8465003E5427 /* StatusSettingPageViewController.swift */; };
 		BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF23E04E1F0D5F5600F30F7E /* Utils.swift */; };
 		BF3E77161F0E1C9B004336FB /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */; };
 		BF3E77181F0E1DED004336FB /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */; };
@@ -65,12 +69,16 @@
 		1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvalibleSettingViewController.swift; sourceTree = "<group>"; };
 		1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntallAutoauthorViewController.swift; sourceTree = "<group>"; };
 		1BED23EF1F1A67E50029114D /* VKCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKCheckbox.swift; sourceTree = "<group>"; };
-		1BED23F11F1A77B60029114D /* Automatic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automatic.swift; sourceTree = "<group>"; };
 		1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMessageViewController.swift; sourceTree = "<group>"; };
 		1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSettingViewController.swift; sourceTree = "<group>"; };
 		2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMOS/Pods-AMOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4C1AC0730B2E60E921BB5D /* Pods_AMOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF08CE131F0C107100D68F10 /* ControlCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterViewController.swift; sourceTree = "<group>"; };
+		BF205D1B1F1A6D00003E5427 /* ChangeMessagePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMessagePageViewController.swift; sourceTree = "<group>"; };
+		BF205D1D1F1A6DB9003E5427 /* ChangePasswordPage1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordPage1ViewController.swift; sourceTree = "<group>"; };
+		BF205D1F1F1A6E5B003E5427 /* ChangePasswordPage2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordPage2ViewController.swift; sourceTree = "<group>"; };
+		BF205D211F1A7E3C003E5427 /* StatusSetting2Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSetting2Page2ViewController.swift; sourceTree = "<group>"; };
+		BF205D231F1A8465003E5427 /* StatusSettingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusSettingPageViewController.swift; sourceTree = "<group>"; };
 		BF23E04E1F0D5F5600F30F7E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BF3E77151F0E1C9B004336FB /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
 		BF3E77171F0E1DED004336FB /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
@@ -221,6 +229,7 @@
 		1BF80C311F0E1EC20020EAF4 /* 6. changeMessager */ = {
 			isa = PBXGroup;
 			children = (
+				BF205D1A1F1A6CE0003E5427 /* Type4 */,
 				1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */,
 				BFD0E5E61F0FF238006B120E /* ChangeMessage2ViewController.swift */,
 			);
@@ -232,6 +241,8 @@
 			children = (
 				1BF80C351F0E2AC50020EAF4 /* StatusSettingViewController.swift */,
 				BFD0E5E81F0FF245006B120E /* StatusSetting2ViewController.swift */,
+				BF205D211F1A7E3C003E5427 /* StatusSetting2Page2ViewController.swift */,
+				BF205D231F1A8465003E5427 /* StatusSettingPageViewController.swift */,
 			);
 			name = StatusSettting;
 			sourceTree = "<group>";
@@ -255,6 +266,16 @@
 			name = "Control Center";
 			sourceTree = "<group>";
 		};
+		BF205D1A1F1A6CE0003E5427 /* Type4 */ = {
+			isa = PBXGroup;
+			children = (
+				BF205D1B1F1A6D00003E5427 /* ChangeMessagePageViewController.swift */,
+				BF205D1D1F1A6DB9003E5427 /* ChangePasswordPage1ViewController.swift */,
+				BF205D1F1F1A6E5B003E5427 /* ChangePasswordPage2ViewController.swift */,
+			);
+			name = Type4;
+			sourceTree = "<group>";
+		};
 		BF3E771B1F0E7346004336FB /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,7 +289,6 @@
 		BF3E771E1F0E73B7004336FB /* 3. Automatic Time */ = {
 			isa = PBXGroup;
 			children = (
-				1BED23F11F1A77B60029114D /* Automatic.swift */,
 				BF3E771C1F0E73B3004336FB /* AutomaticTimeSettingViewController.swift */,
 			);
 			name = "3. Automatic Time";
@@ -393,7 +413,7 @@
 				TargetAttributes = {
 					BFA20DBA1F0BF16B00CED788 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6TR7MM2V64;
+						DevelopmentTeam = 3Y825QTDD3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -494,6 +514,7 @@
 				BFA20DD71F0C01B400CED788 /* Device.swift in Sources */,
 				BF61ABE61F0CBBA90093C1F9 /* OptionViewController.swift in Sources */,
 				1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */,
+				BF205D1E1F1A6DB9003E5427 /* ChangePasswordPage1ViewController.swift in Sources */,
 				BFA20DDB1F0C09E600CED788 /* PageViewController.swift in Sources */,
 				BFA20DD81F0C01B400CED788 /* RealmManager.swift in Sources */,
 				1BA2FB351F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift in Sources */,
@@ -501,20 +522,23 @@
 				BFA20DC11F0BF16B00CED788 /* ViewController.swift in Sources */,
 				BFD0E5E71F0FF238006B120E /* ChangeMessage2ViewController.swift in Sources */,
 				BFD0E5E91F0FF245006B120E /* StatusSetting2ViewController.swift in Sources */,
+				BF205D1C1F1A6D00003E5427 /* ChangeMessagePageViewController.swift in Sources */,
 				1B9196891F0D32800088A880 /* VolumeSettingViewController.swift in Sources */,
 				BF7CA2431F0EADDA004AC470 /* RealTimeViewController.swift in Sources */,
+				BF205D221F1A7E3C003E5427 /* StatusSetting2Page2ViewController.swift in Sources */,
 				BF7CA24A1F0EB16E004AC470 /* CustomHourPicker.swift in Sources */,
 				1BED23F01F1A67E50029114D /* VKCheckbox.swift in Sources */,
 				1B7857D21F0C058D0050670D /* FormAcountViewController.swift in Sources */,
 				BFA20DBF1F0BF16B00CED788 /* AppDelegate.swift in Sources */,
 				BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */,
 				1B91967F1F0D036F0088A880 /* SmsNumberSettingViewController.swift in Sources */,
+				BF205D241F1A8465003E5427 /* StatusSettingPageViewController.swift in Sources */,
 				BF7CA2411F0E950C004AC470 /* CustomPicker2.swift in Sources */,
 				BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */,
 				1B8BCA941F0EA7EE00DA360E /* CancelZoneViewController.swift in Sources */,
 				1B91967D1F0CCFA20088A880 /* CallNumberSettingViewController.swift in Sources */,
 				1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */,
-				1BED23F21F1A77B60029114D /* Automatic.swift in Sources */,
+				BF205D201F1A6E5B003E5427 /* ChangePasswordPage2ViewController.swift in Sources */,
 				BF08CE141F0C107100D68F10 /* ControlCenterViewController.swift in Sources */,
 				1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */,
 				1BF80C361F0E2AC50020EAF4 /* StatusSettingViewController.swift in Sources */,
@@ -643,7 +667,7 @@
 			baseConfigurationReference = 2BB9F9C47BCBA216A60BE3F8 /* Pods-AMOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6TR7MM2V64;
+				DEVELOPMENT_TEAM = 3Y825QTDD3;
 				INFOPLIST_FILE = AMOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -658,7 +682,7 @@
 			baseConfigurationReference = EC24961287A7B7DA08EE3B17 /* Pods-AMOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6TR7MM2V64;
+				DEVELOPMENT_TEAM = 3Y825QTDD3;
 				INFOPLIST_FILE = AMOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

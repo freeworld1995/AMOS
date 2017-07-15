@@ -39,27 +39,53 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
     
     @IBOutlet var viewTrangThai: UIView!
     
-    
+    @IBOutlet var onCheckBox: VKCheckbox!
+      
+    @IBOutlet var offCheckBox: VKCheckbox!
     
     @IBAction func send(_ sender: Any) {
         
         if(currentDevice.type == 0){
             createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)\(select2)10/1")
         }
-        else if (currentDevice.type == 1){
-            createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0/1#")
+        else{
+            
+            if(onCheckBox.isOn()){
+                createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0#")
+            }
+            else{
+                createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)1#")
+            }
         }
-        else {
-            createMessage(device4: "", otherDevice: "\(currentDevice.password)61\(select1)0/1#")
-        }
-        
+    
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         currentDevice = RealmManager.getCurrentDevice(id: id)
         self.setUpDropDown()
+        self.setUpCheckBox()
+        
+        onCheckBox.checkboxValueChangedBlock = {
+            isOn in
+            print("Basic checkbox is \(isOn ? "ON" : "OFF")")
+            if(isOn){
+                self.offCheckBox.setOn(false)
+            }
+        }
+        
+        offCheckBox.checkboxValueChangedBlock = {
+            isOn in
+            print("Basic checkbox is \(isOn ? "ON" : "OFF")")
+            if(isOn){
+                self.onCheckBox.setOn(false)
+            }
+        }
+        
         if(currentDevice.type != 0){
             self.viewTrangThai.isHidden = true
         }
@@ -82,7 +108,15 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func setUpCheckBox(){
     
+        self.onCheckBox.setOn(true, animated: true)
+        self.offCheckBox.setOn(false, animated: true)
+        
+      
+        
+        
+    }
     func setUpDropDown(){
         var arr = [String]()
         var arr1 = [String]()
@@ -90,7 +124,7 @@ class AvalibleSettingViewController: UIViewController ,MFMessageComposeViewContr
             arr = ["51","52","53","54"]
         }
         else if (currentDevice.type == 1){
-            arr = ["051","052","053","054"]
+            arr = ["051","052"]
         }
         else {
             arr = ["07","08","09","10"]

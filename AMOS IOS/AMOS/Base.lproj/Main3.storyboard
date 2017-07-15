@@ -1887,7 +1887,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97r-8N-v3d">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97r-8N-v3d" customClass="VKCheckbox" customModule="AMOS" customModuleProvider="target">
                                 <rect key="frame" x="221" y="183" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.9193369289340102" green="0.9193369289340102" blue="0.9193369289340102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1901,7 +1901,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qL0-xJ-74v">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qL0-xJ-74v" customClass="VKCheckbox" customModule="AMOS" customModuleProvider="target">
                                 <rect key="frame" x="221" y="234" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.91933692889999996" green="0.91933692889999996" blue="0.91933692889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1944,6 +1944,8 @@
                     <navigationItem key="navigationItem" id="Tbk-3a-gsU"/>
                     <connections>
                         <outlet property="cheDo" destination="FKH-JI-iKM" id="GHW-m7-xU7"/>
+                        <outlet property="offCheckBox" destination="qL0-xJ-74v" id="CFe-nx-M02"/>
+                        <outlet property="onCheckBox" destination="97r-8N-v3d" id="znZ-rR-KB7"/>
                         <outlet property="viewTrangThai" destination="5eo-L3-uEz" id="OlO-Ab-feN"/>
                         <outlet property="vongDay" destination="PlW-ho-HXx" id="fe9-SQ-6xF"/>
                     </connections>

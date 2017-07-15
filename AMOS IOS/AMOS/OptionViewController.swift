@@ -217,7 +217,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 5:
-                if currentDevice.type == 3 {
+                if currentDevice.type == 3 || currentDevice.type == 0{
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)
                 } else {
                     let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "availablesetting") as! AvalibleSettingViewController

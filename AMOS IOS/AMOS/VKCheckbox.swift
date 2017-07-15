@@ -122,7 +122,7 @@ class VKCheckbox: UIView
     /**
      Set checkbox corner radius
      */
-    var cornerRadiuss: CGFloat = 0
+    var cornerRadiuse: CGFloat = 0
     {
         didSet
         {
@@ -210,8 +210,8 @@ extension VKCheckbox
         if animated
         {
             UIView.animate(withDuration: 0.275, animations:
-            {
-                self.backgroundColor = on ? self.bgColorSelected : self.bgColor
+                {
+                    self.backgroundColor = on ? self.bgColorSelected : self.bgColor
             })
         }
         else
@@ -351,8 +351,8 @@ extension VKCheckmarkView
         }
         
         UIView.animate(withDuration: duration, animations:
-        {
-            self.alpha = 0
+            {
+                self.alpha = 0
         }, completion: {
             (completed) in
             self.checkmarkLayer.removeFromSuperlayer()

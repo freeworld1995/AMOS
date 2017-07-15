@@ -14,14 +14,13 @@ import Realm
 
 class ChangePassWordViewController: UIViewController ,MFMessageComposeViewControllerDelegate,UITextFieldDelegate {
     
-    
     // Input properties
     var id: Int!
     var currentDevice : Device!
     
     
     @IBOutlet var newPass: UITextField!
-
+    
     @IBAction func sendButton(_ sender: Any) {
         var index = 0
         
@@ -35,25 +34,10 @@ class ChangePassWordViewController: UIViewController ,MFMessageComposeViewContro
         if (!(newPass.text?.isEmpty)! && newPass.text?.characters.count ==  index) {
             
             let oldPass  = currentDevice.password
-            currentDevice.password = newPass.text!
-            
-            // update Device Realm
-            
-            
-//            let realm = try! Realm()
-//            let devices = realm.objects(Device.self).filter("id = %d", currentDevice.id)
-//            
-//            
-//            if let device = devices.first {
-//                try! realm.write {
-//                    device.password = newPass.text!
-//                }
-//            }
 
-            createMessage(device4: "\(oldPass),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)#")
-            
-           
-            
+            // update Device Realm
+
+            createMessage(device4: "\(oldPass),40,000,\(newPass.text!)", otherDevice: "\(currentDevice.password)50\(newPass.text!)#", newPassword: newPass.text!)
             
         }
     }
@@ -71,14 +55,20 @@ class ChangePassWordViewController: UIViewController ,MFMessageComposeViewContro
         view.endEditing(true)
     }
     
-    func createMessage(device4: String, otherDevice: String) {
+    func createMessage(device4: String, otherDevice: String, newPassword: String) {
         let messageVC = MFMessageComposeViewController()
-
+        
         messageVC.recipients = [currentDevice!.SIM]
         messageVC.body = currentDevice?.type == 3 ? device4 : otherDevice
         messageVC.messageComposeDelegate = self
         
-        present(messageVC, animated: true)
+        present(messageVC, animated: true) { 
+            let realm = try! Realm()
+            
+            try! realm.write {
+                self.currentDevice.password = newPassword
+            }
+        }
     }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {

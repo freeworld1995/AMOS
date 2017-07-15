@@ -72,7 +72,13 @@ class AutomaticViewController: UIViewController ,MFMessageComposeViewControllerD
         else{
             time = "\(time)0"
         }
-        createMessage(device4: "", otherDevice: "1234\(select1)\(selectTimeOn)\(selectTimeOff)\(time)")
+        if(cn.isOn()){
+            time = "\(time)1"
+        }
+        else{
+            time = "\(time)0"
+        }
+        createMessage(device4: "", otherDevice: "\(self.currentDevice.password))\(select1)\(selectTimeOn)\(selectTimeOff)\(time)")
 //
     }
     

@@ -148,8 +148,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                     navigationController?.pushViewController(vc, animated: true)
                 }
             case 1:
-                
-                let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "automatictime") as! AutomaticTimeSettingViewController
+                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "automatic") as! AutomaticViewController
                 vc.id = id
                 navigationController?.pushViewController(vc, animated: true)
             case 2:

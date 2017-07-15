@@ -2148,7 +2148,7 @@
         <!--Automatic View Controller-->
         <scene sceneID="CZF-YJ-gTB">
             <objects>
-                <viewController id="QL4-tp-Rg5" customClass="AutomaticViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="automatic" id="QL4-tp-Rg5" customClass="AutomaticViewController" customModule="AMOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AER-2g-NU7"/>
                         <viewControllerLayoutGuide type="bottom" id="kUH-Co-7jA"/>

@@ -204,7 +204,7 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 }
             case 3:
                 if currentDevice.type == 3 {
-                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "statussetting2") as! StatusSetting2ViewController
+                    let vc = UIStoryboard(name: "Main2", bundle: nil).instantiateViewController(withIdentifier: "statussettingpage") as! StatusSettingPageViewController
                     vc.id = id
                     navigationController?.pushViewController(vc, animated: true)
                 } else {

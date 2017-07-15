@@ -9,12 +9,12 @@
 import UIKit
 import SnapKit
 
-class ChangeMessagePageViewController: UIPageViewController {
-
+class StatusSettingPageViewController: UIPageViewController {
+    
     lazy var VCArr: [UIViewController] = {
         return [
-            self.createViewController(name: "changepasswordpage1"),
-            self.createViewController(name: "changepasswordpage2")
+            self.createViewController(name: "statussetting2"),
+            self.createViewController(name: "statussetting2page2")
         ]
     }()
     
@@ -22,29 +22,29 @@ class ChangeMessagePageViewController: UIPageViewController {
     
     // Input properties
     var id: Int!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         dataSource = self
         delegate = self
         
-        if let changeMessagePage1VC = VCArr.first {
-            (changeMessagePage1VC as! ChangePasswordPage1ViewController).id = id
-            setViewControllers([changeMessagePage1VC], direction: .forward, animated: true, completion: nil)
+        if let statusSettingPage1 = VCArr.first {
+            (statusSettingPage1 as! StatusSetting2ViewController).id = id
+            setViewControllers([statusSettingPage1], direction: .forward, animated: true, completion: nil)
         }
         
-        if let changeMessagePage2VC = VCArr.last {
-            (changeMessagePage2VC as! ChangePasswordPage2ViewController).id = id
+        if let statusSettingPage2 = VCArr.last {
+            (statusSettingPage2 as! StatusSetting2Page2ViewController).id = id
         }
         configurePageControl()
     }
-
+    
 }
 
 // MARK: Methods
-extension ChangeMessagePageViewController {
+extension StatusSettingPageViewController {
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
         pageControl = UIPageControl(frame: CGRect.zero)
@@ -68,7 +68,7 @@ extension ChangeMessagePageViewController {
 
 
 // MARK: Datasource, delegate
-extension ChangeMessagePageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+extension StatusSettingPageViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = VCArr.index(of: viewController) else {
             return nil

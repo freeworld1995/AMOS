@@ -1,8 +1,8 @@
 //
-//  StatusSetting2ViewController.swift
+//  StatusSetting2Page2ViewController.swift
 //  AMOS
 //
-//  Created by Jimmy Hoang on 7/7/17.
+//  Created by Jimmy Hoang on 7/15/17.
 //  Copyright © 2017 Jimmy Hoang. All rights reserved.
 //
 
@@ -11,7 +11,8 @@ import DropDown
 import RealmSwift
 import MessageUI
 
-class StatusSetting2ViewController: UIViewController {
+class StatusSetting2Page2ViewController: UIViewController {
+
     
     var id: Int!
     var currentDevice : Device!
@@ -37,7 +38,7 @@ class StatusSetting2ViewController: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
-        let device4Body = "\(currentDevice.password)232\(buttonTitle(1))\(buttonTitle(2))\(buttonTitle(3))\(buttonTitle(4))\(buttonTitle(5))\(buttonTitle(6))\(buttonTitle(7))\(buttonTitle(8))"
+        let device4Body = "\(currentDevice.password)231\(buttonTitle(9))\(buttonTitle(10))\(buttonTitle(11))\(buttonTitle(12))\(buttonTitle(13))\(buttonTitle(14))\(buttonTitle(15))\(buttonTitle(16))"
         
         createMessage(device4: device4Body, otherDevice: "")
     }
@@ -51,10 +52,11 @@ class StatusSetting2ViewController: UIViewController {
         }
         return "\(zone! + 1)"
     }
+
 }
 
 // Methods
-extension StatusSetting2ViewController: MFMessageComposeViewControllerDelegate {
+extension StatusSetting2Page2ViewController: MFMessageComposeViewControllerDelegate {
     fileprivate func setup() {
         var arr = [String]()
         
@@ -91,3 +93,4 @@ extension StatusSetting2ViewController: MFMessageComposeViewControllerDelegate {
     }
     
 }
+

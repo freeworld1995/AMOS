@@ -100,7 +100,7 @@ class CancelSettingViewController: UIViewController, MFMessageComposeViewControl
             }
             else{
                 
-                createMessage(device4: "", otherDevice: "\(currentDevice.password)57\(cancelZoneSelect)240002400#")
+                createMessage(device4: "", otherDevice: "\(currentDevice.password)57\(cancelZoneSelect)24002400#")
             }
         }
         //

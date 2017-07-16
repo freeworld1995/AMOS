@@ -37,7 +37,7 @@ class StatusSetting2ViewController: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
-        let device4Body = "\(currentDevice.password),232,\(buttonTitle(1)),\(buttonTitle(2)),\(buttonTitle(3)),\(buttonTitle(4)),\(buttonTitle(5)),\(buttonTitle(6)),\(buttonTitle(7)),\(buttonTitle(8))"
+        let device4Body = "\(currentDevice.password),231,\(buttonTitle(1)),\(buttonTitle(2)),\(buttonTitle(3)),\(buttonTitle(4)),\(buttonTitle(5)),\(buttonTitle(6)),\(buttonTitle(7)),\(buttonTitle(8))"
         
         createMessage(device4: device4Body, otherDevice: "")
     }

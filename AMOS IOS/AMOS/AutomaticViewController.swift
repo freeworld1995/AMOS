@@ -39,46 +39,30 @@ class AutomaticViewController: UIViewController ,MFMessageComposeViewControllerD
         if(t2.isOn()){
             time = "\(time)1"
         }
-        else{
-            time = "\(time)0"
-        }
+        
         if(t3.isOn()){
-            time = "\(time)1"
+            time = "\(time)2"
         }
-        else{
-            time = "\(time)0"
-        }
+        
         if(t4.isOn()){
-            time = "\(time)1"
+            time = "\(time)3"
         }
-        else{
-            time = "\(time)0"
-        }
+        
         if(t5.isOn()){
-            time = "\(time)1"
+            time = "\(time)4"
         }
-        else{
-            time = "\(time)0"
-        }
+     
         if(t6.isOn()){
-            time = "\(time)1"
-        }
-        else{
-            time = "\(time)0"
+            time = "\(time)5"
         }
         if(t7.isOn()){
-            time = "\(time)1"
-        }
-        else{
-            time = "\(time)0"
+            time = "\(time)6"
         }
         if(cn.isOn()){
-            time = "\(time)1"
+            time = "\(time)7"
         }
-        else{
-            time = "\(time)0"
-        }
-        createMessage(device4: "", otherDevice: "\(self.currentDevice.password))\(select1)\(selectTimeOn)\(selectTimeOff)\(time)")
+       
+        createMessage(device4: "\(self.currentDevice.password),291,\(selectTimeOn),\(selectTimeOff),\(time)", otherDevice: "\(self.currentDevice.password)\(select1)\(selectTimeOn)\(selectTimeOff)\(time)#")
 //
     }
     
@@ -89,6 +73,8 @@ class AutomaticViewController: UIViewController ,MFMessageComposeViewControllerD
     @IBAction func groupButton(_ sender: Any) {
         timeGroup.show()
     }
+    
+    @IBOutlet var grouptimeLabel: UILabel!
     
     @IBOutlet var groupButton: UIButton!
     @IBOutlet var timeOnBtn: UIButton!
@@ -133,12 +119,30 @@ class AutomaticViewController: UIViewController ,MFMessageComposeViewControllerD
         
         if(timeStart){
             timeOnBtn.setTitle("\(stringDate)", for: .normal)
+            if(currentDevice.type == 3){
             selectTimeOn = "\(stringDate)"
+            }
+            else{
+                let time = stringDate.components(separatedBy: ":")
+                selectTimeOn = ""
+                for t  in time {
+                    selectTimeOn = "\(selectTimeOn)\(t)"
+                }
+            }
         }
             
         else{
             timeOffBtn.setTitle("\(stringDate)", for: .normal)
-            selectTimeOff = "\(stringDate)"
+            if(currentDevice.type == 3){
+                selectTimeOff = "\(stringDate)"
+            }
+            else{
+                let time = stringDate.components(separatedBy: ":")
+                selectTimeOff = ""
+                for t  in time {
+                    selectTimeOff = "\(selectTimeOff)\(t)"
+                }
+            }
         }
         
         hideDatePicker()
@@ -149,7 +153,12 @@ class AutomaticViewController: UIViewController ,MFMessageComposeViewControllerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         currentDevice = RealmManager.getCurrentDevice(id: id)
+        if(currentDevice.type == 3){
+            groupButton.isHidden = true
+            grouptimeLabel.isHidden = true
+        }
         setUpTimeGroup()
         self.setupDatePicker()
         

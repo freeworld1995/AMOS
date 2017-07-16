@@ -167,11 +167,17 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
                 
             case 3:
                 
-                
-                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "cancelzone") as! CancelSettingViewController
-                vc.id = id
-                navigationController?.pushViewController(vc, animated: true)
-                
+                if(currentDevice.type != 3){
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "cancelzone") as! CancelSettingViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                    
+                }
+                else{
+                    
+                     Util.showAlert(title: "Thông báo", message: "thao tác trên cài đặt nhóm thời gian tự động tắt mở", cancelAction: nil)
+                }
+              
                 
             default:
                 break
@@ -180,9 +186,17 @@ extension OptionViewController: UITableViewDataSource, UITableViewDelegate {
             switch indexPath.row {
                 
             case 0:
-                let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changepass") as! ChangePassWordViewController
-                vc.id = id
-                navigationController?.pushViewController(vc, animated: true)
+                if (currentDevice.type == 3){
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "passwordDevice4") as! ChangePassWordDevice4ViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+                else{
+                    let vc = UIStoryboard(name: "Main3", bundle: nil).instantiateViewController(withIdentifier: "changepass") as! ChangePassWordViewController
+                    vc.id = id
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+                
             case 1:
                 if currentDevice.type == 3 {
                     Util.showAlert(title: "Thông báo", message: "Vui lòng thao tác trên thiết bị trung tâm", cancelAction: nil)

@@ -21,6 +21,7 @@
 		1B91968C1F0D40A80088A880 /* DelayValiableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968B1F0D40A80088A880 /* DelayValiableViewController.swift */; };
 		1B91968F1F0D4A7A0088A880 /* AvalibleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */; };
 		1BA2FB351F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */; };
+		1BBB96241F1B3D4000114BAD /* ChangePassWordDevice4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB96231F1B3D4000114BAD /* ChangePassWordDevice4ViewController.swift */; };
 		1BED23F01F1A67E50029114D /* VKCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23EF1F1A67E50029114D /* VKCheckbox.swift */; };
 		1BED23F41F1A8D5E0029114D /* AutomaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED23F31F1A8D5E0029114D /* AutomaticViewController.swift */; };
 		1BF80C331F0E1F810020EAF4 /* ChangeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */; };
@@ -69,6 +70,7 @@
 		1B91968B1F0D40A80088A880 /* DelayValiableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayValiableViewController.swift; sourceTree = "<group>"; };
 		1B91968E1F0D4A7A0088A880 /* AvalibleSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvalibleSettingViewController.swift; sourceTree = "<group>"; };
 		1BA2FB341F0F3EB800CCFA46 /* IntallAutoauthorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntallAutoauthorViewController.swift; sourceTree = "<group>"; };
+		1BBB96231F1B3D4000114BAD /* ChangePassWordDevice4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassWordDevice4ViewController.swift; sourceTree = "<group>"; };
 		1BED23EF1F1A67E50029114D /* VKCheckbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKCheckbox.swift; sourceTree = "<group>"; };
 		1BED23F31F1A8D5E0029114D /* AutomaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticViewController.swift; sourceTree = "<group>"; };
 		1BF80C321F0E1F810020EAF4 /* ChangeMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMessageViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				1B9196811F0D08C50088A880 /* ChangePassWordViewController.swift */,
+				1BBB96231F1B3D4000114BAD /* ChangePassWordDevice4ViewController.swift */,
 			);
 			name = "3. ChangePassWord";
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				BF23E04F1F0D5F5600F30F7E /* Utils.swift in Sources */,
 				1B91967F1F0D036F0088A880 /* SmsNumberSettingViewController.swift in Sources */,
 				BF205D241F1A8465003E5427 /* StatusSettingPageViewController.swift in Sources */,
+				1BBB96241F1B3D4000114BAD /* ChangePassWordDevice4ViewController.swift in Sources */,
 				BF7CA2411F0E950C004AC470 /* CustomPicker2.swift in Sources */,
 				BF61ABE91F0CBC380093C1F9 /* UIView+Extension.swift in Sources */,
 				1B8BCA941F0EA7EE00DA360E /* CancelZoneViewController.swift in Sources */,
